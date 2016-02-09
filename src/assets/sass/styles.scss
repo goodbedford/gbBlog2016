@@ -1,15 +1,28 @@
 /* sass styles*/
 
-$primary: #98A89E; //gray
+$primary: #353535; //dark gray
 $primary-lite: #BAC0AC; //gray-green
-$secondary: #4A90FF; //blue
+$secondary: #ff9901; //orange
 $secondary-lite: #E1F3FF; //light blue
 $accent: #FAFAC6; //light yellow
+$accent2: white;
 
 .nav-bar {
-  color: $accent;
-  background-color: $primary;
+  color: $primary;
+  background-color: $accent2;
+  border-bottom: 1px solid $primary;
+  a {
+    color: $primary;
+    display: block;
+    padding: 1.2em 1em;
+    text-decoration: none;
+    &:hover {
+      color: $accent2;
+      background-color: $secondary;
+    }
+  }
 }
+
 
 
 

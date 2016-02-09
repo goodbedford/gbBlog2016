@@ -1,6 +1,15 @@
 /* sass styles*/
 .nav-bar {
-  color: #FAFAC6;
-  background-color: #98A89E; }
+  color: #353535;
+  background-color: white;
+  border-bottom: 1px solid #353535; }
+  .nav-bar a {
+    color: #353535;
+    display: block;
+    padding: 1.2em 1em;
+    text-decoration: none; }
+    .nav-bar a:hover {
+      color: white;
+      background-color: #ff9901; }
 
 /*# sourceMappingURL=styles.css.map */

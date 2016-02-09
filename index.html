@@ -11,9 +11,14 @@
     <!-- remove # from url -->
     <base href="/">
 </head>
-    <body ng-cloak class="container">
-        <div ng-include="'src/layout/nav.tpl.html'"></div>
-        <div ui-view></div>
+    <body ng-cloak>
+        <div class="container">
+            <!-- nav bar-->
+            <div ng-include="'src/layout/nav.tpl.html'"></div>
+
+            <!-- main view -->
+            <div ui-view></div>
+        </div>
 
 
         <script src="dist/js/package.min.js"></script>
