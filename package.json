@@ -12,5 +12,8 @@
     "blog"
   ],
   "author": "goodbedford",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "load-grunt-tasks": "^3.4.0"
+  }
 }
