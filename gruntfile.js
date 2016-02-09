@@ -1,6 +1,8 @@
-module.exports = function(grunt) {
-    "use strict";
+(function() {
+    module.exports = function(grunt) {
+        "use strict";
 
-    require("load-grunt-tasks")(grunt);
+        require("load-grunt-tasks")(grunt);
 
-};
+    };
+})();
