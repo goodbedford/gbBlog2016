@@ -1,0 +1,16 @@
+{
+  "name": "gb-blog-2016",
+  "version": "1.0.0",
+  "description": "goodbedford blog and portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "goodbedford",
+    "portfolio",
+    "blog"
+  ],
+  "author": "goodbedford",
+  "license": "MIT"
+}
