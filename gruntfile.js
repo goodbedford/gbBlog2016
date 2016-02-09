@@ -52,6 +52,6 @@
         });
 
         //start default task
-        grunt.registerTask("default", ["jshint", "clean", "sass", "uglify", "cssmin"])
+        grunt.registerTask("default", ["jshint", "clean", "sass", "uglify", "cssmin", "karma"])
     };
 })();
