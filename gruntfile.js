@@ -14,7 +14,7 @@
             sass: {
                 dist: {
                     files: {
-                        "src/css/styles.css": "src/assets/sass/*.scss"
+                        "src/assets/css/styles.css": "src/assets/sass/*.scss"
                     }
                 },
                 options: {

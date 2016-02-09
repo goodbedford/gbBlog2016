@@ -7,6 +7,6 @@
         //third party
         "ui.router"
 
-    ]);
+        ]);
 
 })();

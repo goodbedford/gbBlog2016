@@ -14,8 +14,9 @@
                 url: "/",
                 controller: "HomeController",
                 controllerAs: "home",
-                templateUrl: "layout/home.tpl.html"
+                templateUrl: "src/layout/home.tpl.html"
             });
+
         $urlRouterProvider.otherwise("/");
 
         //remove hash in urls
