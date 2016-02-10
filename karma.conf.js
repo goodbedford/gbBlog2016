@@ -17,11 +17,12 @@ module.exports = function(config) {
     files: [
       // angular dependencies
       "node_modules/angular/angular.js",
+      "node_modules/angular-mocks/angular-mocks.js",
       "node_modules/ui-router/release/angular-ui-router.js",
       "node_modules/angular-bootstrap/ui-bootstrap.js",
       "src/app.module.js",
       "src/app.config.js",
-      "src/layout/homeController.js",
+      "src/layout/**/*.js",
       "test/**/*.js"
     ],
 
@@ -66,7 +67,7 @@ module.exports = function(config) {
 
     plugins: [
         "karma-chrome-launcher",
-        "karma-jasmine"
+        "karma-jasmine",
     ],
 
     // Continuous Integration mode

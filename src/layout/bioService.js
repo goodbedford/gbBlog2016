@@ -18,6 +18,7 @@
         factory.name = "Bedford Franklin Williamson IV";
         factory.location = "San Francisco";
         factory.occupation = "Front End Developer";
+        factory.img = ["src/assets/images/gb-logos/gblogo40.png"];
 
 
         return factory;

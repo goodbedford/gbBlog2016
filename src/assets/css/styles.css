@@ -14,8 +14,24 @@
   padding: 0.5em;
   border-bottom: 1px solid #353535; }
 
+.gb-logo {
+  height: 200px; }
+
 img {
   height: 50px; }
+
+.logos {
+  padding: 0.5em;
+  margin: 0.5em; }
+
+.icon {
+  padding: 0.5em; }
+
+.logo-footer {
+  margin-top: 1.5em;
+  padding: 2em 0;
+  border-top: 2px solid #ff9901;
+  background-color: white; }
 
 .nav-bar {
   color: #353535;

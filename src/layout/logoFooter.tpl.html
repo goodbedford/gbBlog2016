@@ -1,0 +1,6 @@
+<div class="row logo-footer" ng-controller="LogoController as logo">
+    <div class="col-xs-4 col-sm-2 logos" ng-repeat="logo in logo.logos">
+        <div class="text-center"><img ng-src="{{logo.img}}" alt="pic" class="icon"/></div>
+        <div class="text-center">{{logo.name}}</div>
+    </div>
+</div>

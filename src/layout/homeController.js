@@ -13,5 +13,8 @@
         home.bio = BioService;
         home.test="beddy";
         home.logos = LogoService;
+        home.testy = function() {
+            return 0;
+        };
     }
 })();

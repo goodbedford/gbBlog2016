@@ -25,11 +25,26 @@ $accent3: gray;
   padding: 0.5em;
   border-bottom: 1px solid $primary;
 }
+.gb-logo {
+  height: 200px;
+}
 img {
   height: 50px;
+  //width: 100px;
 }
 .logos {
+  padding: 0.5em;
+  margin: 0.5em;
+}
+.icon {
+  padding: 0.5em;
+}
 
+.logo-footer {
+  margin-top: 1.5em;
+  padding: 2em 0;
+  border-top: 2px solid $secondary;
+  background-color: $accent2;
 }
 .nav-bar {
   color: $primary;
