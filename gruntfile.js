@@ -29,7 +29,7 @@
                                                    "node_modules/angular-bootstrap/ui-bootstrap.js",
                                                    "src/app.module.js",
                                                    "src/app.config.js",
-                                                   "src/layout/homeController.js"]
+                                                   "src/layout/**/*.js"]
                     }
                 },
                 options: {

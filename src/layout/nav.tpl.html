@@ -1,13 +1,37 @@
-<div class="row">
-    <div class="col-sm-12">
+<div class="row" ng-controller="NavController as nav">
+    <div class="col-xs-12 col-sm-12 nav hidden-xs">
         <ul class="list-inline nav-bar">
-            <li><a ui-sref="home">Blog</a></li>
-            <li><a ui-sref="#">Projects</a></li>
+            <li><a ui-sref="home">Goodbedford.com</a></li>
+            <li><a ui-sref="blog">Blog</a></li>
+            <li><a ui-sref="projects">Projects</a></li>
             <li><a ui-sref="#">Resume</a></li>
-            <li><a ui-sref="#">Community</a></li>
+            <li><a ui-sref="community">Community</a></li>
             <li><a ui-sref="#">LinkedIn</a></li>
             <li><a ui-sref="#">Github</a></li>
-            <li><a ui-sref="#">Contact</a></li>
+            <li><a ui-sref="contact">Contact</a></li>
         </ul>
+    </div>
+    <div class="row visible-xs-block">
+        <div class="col-xs-12">
+            <div class="row header">
+                <div class="col-xs-6">Goodbedford.com</div>
+                <div class="col-xs-2 col-xs-offset-2">
+                    <button class="btn-menu" ng-click="nav.isClosed = !nav.isClosed">Menu</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12" ng-hide="nav.isClosed">
+                    <ul class="list-unstyled nav-bar">
+                        <li><a ui-sref="home">Blog</a></li>
+                        <li><a ui-sref="#">Projects</a></li>
+                        <li><a ui-sref="#">Resume</a></li>
+                        <li><a ui-sref="#">Community</a></li>
+                        <li><a ui-sref="#">LinkedIn</a></li>
+                        <li><a ui-sref="#">Github</a></li>
+                        <li><a ui-sref="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

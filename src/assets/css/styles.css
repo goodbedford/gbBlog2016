@@ -1,4 +1,19 @@
 /* sass styles*/
+.btn-menu {
+  color: #353535;
+  background-color: #ff9901;
+  outline-width: 0px;
+  border: none; }
+  .btn-menu:hover {
+    color: #ff9901;
+    background-color: gray; }
+
+.header {
+  font-size: 1.25em;
+  margin: 0.5em;
+  padding: 0.5em;
+  border-bottom: 1px solid #353535; }
+
 .nav-bar {
   color: #353535;
   background-color: white;
@@ -11,5 +26,7 @@
     .nav-bar a:hover {
       color: white;
       background-color: #ff9901; }
+  .nav-bar li {
+    border-bottom: 1px solid #353535; }
 
 /*# sourceMappingURL=styles.css.map */

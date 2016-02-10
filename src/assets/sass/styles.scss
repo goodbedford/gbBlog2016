@@ -6,7 +6,25 @@ $secondary: #ff9901; //orange
 $secondary-lite: #E1F3FF; //light blue
 $accent: #FAFAC6; //light yellow
 $accent2: white;
+$accent3: gray;
 
+.btn-menu {
+  color:$primary;
+  background-color: $secondary;
+  outline-width: 0px;
+  //font-size: 1.25em;
+  border: none;
+  &:hover {
+    color: $secondary;
+    background-color: $accent3;
+  }
+}
+.header {
+  font-size: 1.25em;
+  margin: 0.5em;
+  padding: 0.5em;
+  border-bottom: 1px solid $primary;
+}
 .nav-bar {
   color: $primary;
   background-color: $accent2;
@@ -21,9 +39,10 @@ $accent2: white;
       background-color: $secondary;
     }
   }
+  li {
+    border-bottom: 1px solid $primary;
+  }
 }
-
-
 
 
 
