@@ -29,4 +29,12 @@
   .nav-bar li {
     border-bottom: 1px solid #353535; }
 
+.splash-panel {
+  padding: 2em;
+  margin-top: 1em; }
+  .splash-panel .tag-line {
+    color: #ff9901;
+    margin-top: 0.5em;
+    line-height: .25em; }
+
 /*# sourceMappingURL=styles.css.map */

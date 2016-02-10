@@ -5,11 +5,11 @@
         .module("gbBlog")
         .controller("HomeController", HomeController);
 
-    HomeController.$inject = [];
+    HomeController.$inject = ["BioService"];
 
-    function HomeController() {
+    function HomeController(BioService) {
         var home = this;
 
-        home.test = "hi Im from home controller";
+        home.bio = BioService;
     }
 })();

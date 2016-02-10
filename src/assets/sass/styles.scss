@@ -43,6 +43,18 @@ $accent3: gray;
     border-bottom: 1px solid $primary;
   }
 }
+.splash-panel {
+  //background-color: $accent3;
+  //border: 5px solid $accent3;
+  padding: 2em;
+  margin-top: 1em;
+  .tag-line {
+    color: $secondary;
+    margin-top: 0.5em;
+    line-height: .25em;
+    //font-size: 0.75em;
+  }
+}
 
 
 
