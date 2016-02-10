@@ -25,6 +25,12 @@ $accent3: gray;
   padding: 0.5em;
   border-bottom: 1px solid $primary;
 }
+img {
+  height: 50px;
+}
+.logos {
+
+}
 .nav-bar {
   color: $primary;
   background-color: $accent2;
@@ -51,7 +57,7 @@ $accent3: gray;
   .tag-line {
     color: $secondary;
     margin-top: 0.5em;
-    line-height: .25em;
+    line-height: 1.25em;
     //font-size: 0.75em;
   }
 }

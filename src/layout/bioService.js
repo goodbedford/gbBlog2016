@@ -15,8 +15,9 @@
         factory.tagline2 = "SFUSD Educator transitioning to a web application developer & tech inclusion advocate. " +
                             "I am seeking a role where I can build upon skills and experiences gained as an educator, " +
                             "while dedicating myself to continuously learning and excelling in a web developer career.";
-        factory.name = "Bedford Williamson";
+        factory.name = "Bedford Franklin Williamson IV";
         factory.location = "San Francisco";
+        factory.occupation = "Front End Developer";
 
 
         return factory;

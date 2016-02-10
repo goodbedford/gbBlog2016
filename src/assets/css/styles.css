@@ -14,6 +14,9 @@
   padding: 0.5em;
   border-bottom: 1px solid #353535; }
 
+img {
+  height: 50px; }
+
 .nav-bar {
   color: #353535;
   background-color: white;
@@ -35,6 +38,6 @@
   .splash-panel .tag-line {
     color: #ff9901;
     margin-top: 0.5em;
-    line-height: .25em; }
+    line-height: 1.25em; }
 
 /*# sourceMappingURL=styles.css.map */

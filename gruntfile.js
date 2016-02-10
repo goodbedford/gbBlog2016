@@ -5,6 +5,12 @@
         require("load-grunt-tasks")(grunt);
 
         grunt.initConfig({
+            watch: {
+                all: {
+                    files:["src/**/*"],
+                    tasks:["default"],
+                },
+            },
             jshint: {
                files: {
                    src: ["src/**/*.js"]
