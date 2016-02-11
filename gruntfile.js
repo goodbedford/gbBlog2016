@@ -7,7 +7,7 @@
         grunt.initConfig({
             watch: {
                 all: {
-                    files:["src/**/*"],
+                    files:["src/**/*", "test/**/*.js"],
                     tasks:["default"],
                 },
             },

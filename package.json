@@ -27,7 +27,9 @@
     "karma": "^0.13.19",
     "karma-chrome-launcher": "^0.2.2",
     "karma-coverage": "^0.5.3",
+    "karma-html-reporter": "^0.2.7",
     "karma-jasmine": "^0.3.7",
+    "karma-jasmine-matchers": "^2.0.1",
     "karma-ng-html2js-preprocessor": "^0.2.0",
     "load-grunt-tasks": "^3.4.0"
   },
