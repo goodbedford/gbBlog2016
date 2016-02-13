@@ -4,6 +4,23 @@ http://www.goodbedford.com/
 
 **Portfolio and Blog showcasing present and past projects.**
 
-**Stack:** HTML5, CSS, Javascript, Angular, Bootstrap, Grunt, Sass, Karma, Jasmine, NPM, RWD,  
-           Emmet, Sketch, Webstorm
-**Role:** Conceptualization, Front-End Development & Unit Testing 
+**Stack:** 
+- HTML5, 
+- CSS, 
+- Javascript, 
+- Angular, 
+- Bootstrap, 
+- Grunt, 
+- Sass, 
+- Karma, 
+- Jasmine, 
+- NPM, 
+- RWD, 
+- Emmet, 
+- Sketch, 
+- Webstorm
+- 
+**Role:** 
+- Conceptualization, 
+- Front-End Development 
+- Unit Testing 
