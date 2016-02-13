@@ -23,6 +23,7 @@ module.exports = function(config) {
       "src/app.module.js",
       "src/app.config.js",
       "src/layout/**/*.js",
+      "src/components/**/*.js",
       "test/**/*.js"
     ],
 

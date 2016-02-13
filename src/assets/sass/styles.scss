@@ -8,6 +8,31 @@ $accent: #FAFAC6; //light yellow
 $accent2: white;
 $accent3: gray;
 
+
+.bio-detail {
+  color: $primary;
+}
+.bio-detail-2 {
+  color: $secondary;
+}
+.bio-header {
+  color: $accent2;
+  background-color: $accent3;
+  padding: 5px;
+}
+.bio-label {
+  color: $secondary;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.blackout {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 20;
+}
+
 .btn-menu {
   color:$primary;
   background-color: $secondary;
@@ -19,19 +44,36 @@ $accent3: gray;
     background-color: $accent3;
   }
 }
+.info-panel {
+  border-bottom: 2px solid $primary-lite;
+  margin-bottom: 0.5em;
+}
+.gb-logo {
+  height: 200px;
+}
 .header {
   font-size: 1.25em;
   margin: 0.5em;
   padding: 0.5em;
   border-bottom: 1px solid $primary;
 }
-.gb-logo {
-  height: 200px;
+.header-title-btm {
+  margin-bottom: 1em;
 }
-img {
+
+img.icon {
   height: 50px;
   //width: 100px;
 }
+.img-medium {
+  height: 200px;
+  max-width: 100%;
+}
+.img-large {
+  height: 300px;
+  width: 100%;
+}
+
 .logos {
   padding: 0.5em;
   margin: 0.5em;
@@ -69,13 +111,18 @@ img {
   //border: 5px solid $accent3;
   padding: 2em;
   margin-top: 1em;
-  .tag-line {
-    color: $secondary;
-    margin-top: 0.5em;
-    line-height: 1.25em;
-    //font-size: 0.75em;
-  }
 }
-
+.spacer-large {
+  margin-top: 10em;
+}
+.spacer-small {
+  margin-top: 4em;
+}
+.tag-line {
+  color: $secondary;
+  margin-top: 0.5em;
+  line-height: 1.25em;
+  //font-size: 0.75em;
+}
 
 

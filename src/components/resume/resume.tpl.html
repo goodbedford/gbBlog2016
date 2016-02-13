@@ -1,0 +1,116 @@
+<div class="row ">
+    <!--<div class="hidden-xs col-sm-2">-->
+        <!--<img ng-src={{resume.bio.img[0]}} alt="gb logo"/>-->
+    <!--</div>-->
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+        <div class="splash-panel">
+            <h3 class="">{{resume.bio.name}}</h3>
+            <p><span class="tag-line">"{{resume.bio.tagLine}}"</span></p>
+            <p><strong>Seeking Opportunities: </strong>For {{resume.bio.occupation}} Positions</p>
+        </div>
+    <div class="animated fadeIn">
+        <h3 class="bio-header">Skills</h3>
+        <p>
+            <span class="bio-label">Languages: </span>
+            <span class="bio-detail">{{resume.bio.skills.languages}}</span>
+        </p>
+        <p>
+            <span class="bio-label">Frameworks: </span>
+            <span class="bio-detail">{{resume.bio.skills.frameworks}}</span>
+        </p>
+        <p>
+            <span class="bio-label">Libraries: </span>
+            <span class="bio-detail">{{resume.bio.skills.libraries}}</span>
+        </p>
+        <p>
+            <span class="bio-label">Databases: </span>
+            <span class="bio-detail">{{resume.bio.skills.database}}</span>
+        </p>
+        <p>
+            <span class="bio-label">Technologies: </span>
+            <span class="bio-detail">{{resume.bio.skills.technologies}}</span>
+        </p>
+        <p>
+            <span class="bio-label">Personal: </span>
+            <span class="bio-detail">{{resume.bio.skills.personal}}</span>
+        </p>
+        <h3 class="bio-header">Work Experience</h3>
+        <div ng-repeat="job in resume.bio.workExperience">
+            <div ng-class="resume.placeCssHeader($index, resume.bio.workExperience,'info-panel')">
+                <p>
+                    <span class="bio-label">Company: </span>
+                    <span class="bio-detail">{{job.company}}</span>
+                </p>
+                <p>
+                    <span class="bio-label">Title: </span>
+                    <span class="bio-detail">{{job.title}}</span>
+                </p>
+                <p>
+                    <span class="bio-label">Description:</span>
+                </p>
+                <ul ng-repeat="desc in job.description">
+                    <li>
+                        <span class="bio-detail">{{desc}}</span>
+                    </li>
+                </ul>
+                <p>
+                    <span class="bio-label">Start: </span>
+                    <span class="bio-detail">{{job.timePeriod.start}}</span> -
+                    <span class="bio-label">End: </span>
+                    <span class="bio-detail">{{job.timePeriod.end}}</span>
+                </p>
+            </div>
+        </div>
+        <h3 class="bio-header">Projects</h3>
+        <div ng-repeat="project in resume.bio.projects">
+            <div ng-class="resume.placeCssHeader($index, resume.bio.projects,'info-panel')">
+                <p>
+                    <span class="bio-label">Title: </span>
+                    <span class="bio-detail">{{project.title}}</span>
+                </p>
+                <a ng-href="{{project.url}}">
+                    <p>{{project.url}}</p>
+                </a>
+                <p>
+                    <span class="bio-label">Description: </span>
+                    <span class="bio-detail">{{project.description}}</span>
+                </p>
+                <p>
+                    <span class="bio-label">Stack: </span>
+                    <span class="bio-detail">{{project.stack}}</span>
+                </p>
+                <p>
+                    <span class="bio-label">Role: </span>
+                    <span class="bio-detail">{{project.role}}</span>
+                </p>
+                <p>
+                    <span class="bio-label">Date: </span>
+                    <span class="bio-detail">{{project.date}}</span>
+                </p>
+            </div>
+        </div>
+        <h3 class="bio-header">Eduction</h3>
+        <div ng-repeat="ed in resume.bio.education track by $index">
+            <div ng-class="resume.placeCssHeader($index, resume.bio.education,'info-panel')">
+                <p><span class="bio-label">School: </span>
+                    <span class="bio-detail">{{ed.school}}</span>
+                    <a ng-href="{{ed.url}}">{{ed.url}}</a>
+                </p>
+                <ul ng-repeat="desc in ed.description">
+                    <li>
+                        <span class="bio-detail">{{desc}}</span>
+                    </li>
+                </ul>
+                <p>
+                    <span class="bio-label">Major: </span>
+                    <span class="bio-detail">{{ed.major}}</span>
+                </p>
+                <p>
+                    <span class="bio-label">Degree: </span>
+                    <span class="bio-detail">{{ed.degree}}</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>

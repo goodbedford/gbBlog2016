@@ -7,7 +7,7 @@
         grunt.initConfig({
             watch: {
                 all: {
-                    files:["src/**/*", "test/**/*.js"],
+                    files:["index.html","src/**/*", "test/**/*.js"],
                     tasks:["default"],
                 },
             },
@@ -30,12 +30,14 @@
             uglify: {
                 dist: {
                     files: {
-                        "dist/js/package.min.js": ["node_modules/angular/angular.js",
-                                                   "node_modules/ui-router/release/angular-ui-router.js",
-                                                   "node_modules/angular-bootstrap/ui-bootstrap.js",
-                                                   "src/app.module.js",
-                                                   "src/app.config.js",
-                                                   "src/layout/**/*.js"]
+                        "dist/js/package.min.js": [ "node_modules/angular/angular.js",
+                                                    "node_modules/ui-router/release/angular-ui-router.js",
+                                                    "node_modules/angular-bootstrap/ui-bootstrap.js",
+                                                    "src/app.module.js",
+                                                    "src/app.config.js",
+                                                    "src/components/**/*.js",
+                                                    "src/layout/**/*.js"
+                        ]
                     }
                 },
                 options: {
@@ -58,6 +60,6 @@
         });
 
         //start default task
-        grunt.registerTask("default", ["jshint", "clean", "sass", "uglify", "cssmin", "karma"])
+        grunt.registerTask("default", ["jshint", "clean", "sass", "cssmin", "uglify", "karma"])
     };
 })();

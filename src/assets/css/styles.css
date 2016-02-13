@@ -1,4 +1,27 @@
 /* sass styles*/
+.bio-detail {
+  color: #353535; }
+
+.bio-detail-2 {
+  color: #ff9901; }
+
+.bio-header {
+  color: white;
+  background-color: gray;
+  padding: 5px; }
+
+.bio-label {
+  color: #ff9901;
+  font-weight: bold;
+  font-size: 1.2em; }
+
+.blackout {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20; }
+
 .btn-menu {
   color: #353535;
   background-color: #ff9901;
@@ -8,17 +31,32 @@
     color: #ff9901;
     background-color: gray; }
 
+.info-panel {
+  border-bottom: 2px solid #BAC0AC;
+  margin-bottom: 0.5em; }
+
+.gb-logo {
+  height: 200px; }
+
 .header {
   font-size: 1.25em;
   margin: 0.5em;
   padding: 0.5em;
   border-bottom: 1px solid #353535; }
 
-.gb-logo {
-  height: 200px; }
+.header-title-btm {
+  margin-bottom: 1em; }
 
-img {
+img.icon {
   height: 50px; }
+
+.img-medium {
+  height: 200px;
+  max-width: 100%; }
+
+.img-large {
+  height: 300px;
+  width: 100%; }
 
 .logos {
   padding: 0.5em;
@@ -51,9 +89,16 @@ img {
 .splash-panel {
   padding: 2em;
   margin-top: 1em; }
-  .splash-panel .tag-line {
-    color: #ff9901;
-    margin-top: 0.5em;
-    line-height: 1.25em; }
+
+.spacer-large {
+  margin-top: 10em; }
+
+.spacer-small {
+  margin-top: 4em; }
+
+.tag-line {
+  color: #ff9901;
+  margin-top: 0.5em;
+  line-height: 1.25em; }
 
 /*# sourceMappingURL=styles.css.map */
