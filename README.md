@@ -19,7 +19,7 @@ http://www.goodbedford.com/
 - Emmet, 
 - Sketch, 
 - Webstorm
-- 
+
 **Role:** 
 - Conceptualization, 
 - Front-End Development 
