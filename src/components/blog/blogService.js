@@ -34,7 +34,7 @@
                             "<a href='http://johnpolacek.github.io/scrolldeck.js/decks/responsive/'> Mobile First</a> developers can actually " +
                             "put apps up on <a href='https://itunes.apple.com/us/app/apple-store/id375380948?mt=8'>Apple Store</a>" +
                             "and <a href='https://play.google.com/store/apps?hl=en'> Google Play</a>. That opens up" +
-                            "so many possibilities.  I need to work on an Ionic project and give it a spin. I also want "+
+                            "so many possibilities.  I need to work on an Ionic projectSpec and give it a spin. I also want "+
                             "to give a shot out to the opening speaker <a href='https://blog.nraboy.com/'> Nic Raboy</a>. "+
                             "He gave a live coding demo of an Ionic app. I he spoke about a interesting nosql database "+
                             "<a href='http://www.couchbase.com/'> couchbase db</a>. "+

@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/components/blog/blogService.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">all files</a> / <a href="index.html">src/components/blog/</a> blogService.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>6/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>2/2</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>6/6</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">(function() {
+    "use strict";
+&nbsp;
+    angular
+        .module("gbBlog")
+        .factory("BlogService", BlogService);
+&nbsp;
+    BlogService.$inject = [];
+&nbsp;
+    function BlogService() {
+        var factory = [
+            {
+                title: "Whole new dimension to being a web developer",
+                date: "2015-29-07",
+                author: "Goodbedford",
+                content: {
+                    thanks: "I must do a quick thank you to all my friends and family. "+
+                            "This article is dedicated to some local organizers and Yassin at "+
+                            "&lt;a href='http://www.meetup.com/Ionic-SF/'&gt;SF Ionic Meet Up&lt;/a&gt;" +
+                            "and Ruben from &lt;a href='https://codeclass.io/#/'&gt;Code.io&lt;/a&gt;. "+
+                            "Thanks for a great event.",
+&nbsp;
+                    body:   "I got stickers from Max from &lt;a href='http://drifty.com/'&gt;Drifty&lt;/a&gt;. I thought that was coolness. "+
+                            "I know I’m new to the game but I hope it last forever. I hope to always be inspired and humbled " +
+                            "by our work. The programming community is large and small much like San Francisco and the Bay Area. "+
+                            "I was at a meet up at &lt;a href='http://www.hackreactor.com/program'&gt;HR&lt;/a&gt; "+
+                            "for &lt;a href='http://ionicframework.com/getting-started/'&gt;Ionic&lt;/a&gt; with my instructor "+
+                            "from &lt;a href='https://generalassemb.ly/education/web-development-immersive' &gt;GA&lt;/a&gt;. "+
+                            "We got to hear some great announcements Ionic Market Place and Ionic 2. "+
+                            "It seems like version 2 is right on time for &lt;a href='https://angular.io/docs/js/latest/guide/'&gt; Angular 2&lt;/a&gt;. "+
+                            "Ionic 2 had mostly the same components with enhanced physics and improved performance. "+
+                            "Max didn’t give a hard time table but hinted about shorter Alpha and Beta timelines." +
+                            "I think Ionic is powerful because it brings a &lt;span class='highlight'&gt;whole new dimension to being a web developer&lt;/span&gt;. "+
+                            "&lt;a href='http://johnpolacek.github.io/scrolldeck.js/decks/responsive/'&gt; Mobile First&lt;/a&gt; developers can actually " +
+                            "put apps up on &lt;a href='https://itunes.apple.com/us/app/apple-store/id375380948?mt=8'&gt;Apple Store&lt;/a&gt;" +
+                            "and &lt;a href='https://play.google.com/store/apps?hl=en'&gt; Google Play&lt;/a&gt;. That opens up" +
+                            "so many possibilities.  I need to work on an Ionic projectSpec and give it a spin. I also want "+
+                            "to give a shot out to the opening speaker &lt;a href='https://blog.nraboy.com/'&gt; Nic Raboy&lt;/a&gt;. "+
+                            "He gave a live coding demo of an Ionic app. I he spoke about a interesting nosql database "+
+                            "&lt;a href='http://www.couchbase.com/'&gt; couchbase db&lt;/a&gt;. "+
+                            "He said they are currently looking to &lt;a href='http://www.couchbase.com/careers'&gt;hire&lt;/a&gt; "+
+                            "but what I really found interesting was his &lt;a href='https://blog.nraboy.com/2015/07/my-first-year-of-blogging-and-the-stats-around-it/'&gt; blog&lt;/a&gt;. "+
+                            "He has some really tight posts. All in all a good day.",
+                    },
+&nbsp;
+                img: "src/assets/images/gb-logos/gblogo8.png"
+            },
+            {
+                title: "Code of Conduct",
+                date: "2015-28-06",
+                author: "Goodbedford",
+                content: {
+                    thanks: "I would like to give thanks to everyone who helped me this week. In no particular order " +
+                            "Rich and Steve from &lt;a href='http://nodeschool.io/sanfrancisco/'&gt;Node School SF&lt;/a&gt;.",
+&nbsp;
+                    body:   "I loved when Rich read the &lt;a href='https://github.com/nodeschool/sanfrancisco/blob/gh-pages/code-of-conduct.md'&gt;code of conduct&lt;/a&gt; for each "+
+                            "person who arrived late. The &lt;span class='highlight'&gt;code of conduct&lt;/span&gt; made me feel welcomed and set the tone for a safe enviroment to learn. "+
+                            "Traffic was crazy this weekend. It's Pride weekend and the Supreme Court decision was " +
+                            "right on time. I have to thank &lt;a href='https://github.com/smallhaxe'&gt;@smallhaxe&lt;/a&gt; for the welcome. We had a few talks about node and " +
+                            "file structures. My classmates are awesome and the instructors a just wonderful people. " +
+                            "This was my first week of bootcamp and it was amazing how much information we that is floating "+
+                            "out there. Here are a few resources that helped me. "+
+                            "&lt;a href='https://developer.mozilla.org/en-US/'&gt;MDN&lt;/a&gt; great for Javascript. "+
+                            "&lt;a href='http://getbootstrap.com/css/'&gt;Bootstrap&lt;/a&gt; great for CSS.",
+                    },
+&nbsp;
+                img: "src/assets/images/gb-logos/gblogo9.png"
+            },
+            {
+                title: "Add these details to the plan",
+                date: "2015-29-05",
+                author: "Goodbedford",
+                content: {
+                    thanks: "I would like to give thanks to Joe Blau and Maurice Cherry. "+
+                            "To all the listeners and my family. I am inspired and filled "+
+                            "with creation.",
+&nbsp;
+                    body:   "I was listening to this podcast and I was like, "+
+                            "Yo I really like what Joe is saying. I  can relate to his hustle "+
+                            "and fascination. The curiosity and amazement of riding the wave of "+
+                            "intense education. A wealth of experience from all angles of his life. "+
+                            "It made me think of a lot of things. One of which was to keep at the "+
+                            "blogcast and be thankful to those that helped me. I find it honestly "+
+                            "refreshing to me when a person give some acknowledgement to whom "+
+                            "they grew and fellowshipped with. Which reminds me to &lt;span class='highlight'&gt;add these "+
+                            "details to my plan&lt;/span&gt;.&lt;br /&gt;" +
+                            "&lt;a href='https://joeblau.com/'&gt;Joe Blau&lt;/a&gt; was on &lt;a href='http://revisionpath.com/'&gt;Revision Path&lt;/a&gt; podcast. "+
+                            "&lt;a href='http://revisionpath.com/?s=joe+blau'&gt;Episode 65&lt;/a&gt;",
+                },
+&nbsp;
+                img: "src/assets/images/gb-logos/gblogo14.png"
+            },
+            {
+                title: "Accepted",
+                date: "2015-08-05",
+                author: "Goodbedford",
+                content:{
+                    thanks: "I would like to thank my family and friends for their help and"+
+                            "encouragement to purse my dreams of being a developer",
+&nbsp;
+                    body:   "I got &lt;span class='highlight'&gt;accepted&lt;/span&gt; into a Web Development Immersive Bootcamp."+
+                            "I am glad my previous work has paid off. Now, as I look into"+
+                            "the future there is so much further to go. I could be"+
+                            "daunting when thinking about where to begin.  So I will"+
+                            "have to make a list of goals. In my school I am going to"+
+                            "learn Javascript and Ruby.  I will also learn the Rails,"+
+                            "Angular, Express, Node, Mongodb, Postgres, and testing in"+
+                            "Mocha.  I am also interested in Famous.js, React.js and"+
+                            "ES6 compilers like Babel. I don’t want to get stuck in"+
+                            "liking everything new and not mastering the current."+
+                            "It will be a twelve week intensive program. I need to"+
+                            "have a job at the other end.  I have quit both my jobs"+
+                            "making over lets just say 75 grand to go back to school."+
+                            "I am honestly giving it my best chance. Wish me luck."
+                },
+                img: "src/assets/images/gb-logos/gblogo15.png"
+            },
+            {
+                title: "Hacker School",
+                date: "2015-29-01",
+                author: "Goodbedford",
+                content:{
+                    thanks: "This is relaunch of my personal blog. I would like to " +
+                            "remember to thank people who have added to my growth. So, I say thanks!",
+&nbsp;
+                    body:   "Today I went to my &lt;span class='highlight'&gt;hacker school&lt;/span&gt;. I said I can do this,"+
+                            "the people are there. The craziest thing about it,"+
+                            "was a good feeling. Just walking in there I knew I could"+
+                            "just bring a lot to the cohort. I am already envisioning them."+
+                            "A few good thoughts came to me, why doesn\'t this text editor"+
+                            "not have the a dictionary/thesaurus? Not that thought but I" +
+                            "walked in and the front was very low key. I missed the first" +
+                            "time up the block. I liked that quality. The thing that got me" +
+                            "most, I saw people I saw on the internet. Amazing. I mean I" +
+                            "saw someone who answered the online group video conference" +
+                            "question. Peace, I gotta go put in work."
+                    },
+                img: "src/assets/images/gb-logos/gblogo25.png"
+            }
+        ];
+&nbsp;
+&nbsp;
+&nbsp;
+        return factory;
+    }
+})();</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sat Feb 13 2016 03:05:34 GMT-0800 (PST)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

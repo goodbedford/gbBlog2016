@@ -41,7 +41,7 @@ $accent3: gray;
   border: none;
   &:hover {
     color: $secondary;
-    background-color: $accent3;
+    background-color: $accent2;
   }
 }
 .info-panel {
@@ -53,8 +53,9 @@ $accent3: gray;
 }
 .header {
   font-size: 1.25em;
-  margin: 0.5em;
+  margin-top: 0.5em;
   padding: 0.5em;
+  background-color: $secondary;
   border-bottom: 1px solid $primary;
 }
 .header-title-btm {
@@ -105,6 +106,8 @@ img.icon {
   li {
     border-bottom: 1px solid $primary;
   }
+}
+.nav-title {
 }
 .splash-panel {
   //background-color: $accent3;

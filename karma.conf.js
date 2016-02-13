@@ -20,6 +20,7 @@ module.exports = function(config) {
       "node_modules/angular-mocks/angular-mocks.js",
       "node_modules/ui-router/release/angular-ui-router.js",
       "node_modules/angular-bootstrap/ui-bootstrap.js",
+      "node_modules/angular-sanitize/angular-sanitize.js",
       "src/app.module.js",
       "src/app.config.js",
       "src/layout/**/*.js",

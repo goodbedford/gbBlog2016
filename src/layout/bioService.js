@@ -125,7 +125,7 @@
             {
                 title: "Enrollment Data Viz",
                 url: "https://enrollment-data.herokuapp.com/",
-                description: "A Data visualization project showcasing various chart types including animated line, bar, pie, donut and small multiples.",
+                description: "A Data visualization projectSpec showcasing various chart types including animated line, bar, pie, donut and small multiples.",
                 stack: " C3, D3, HTML, CSS, Javascript, Node, Express & Heroku",
                 role: "Conceptualization, Front-End & Back-End Development",
                 img: "src/assets/images/projects/enrollment/enrollment-screenshot.jpg",
@@ -145,7 +145,7 @@
                 url: "http://gb-movie-rating.bitballoon.com/",
                 description: "UI demo of movie rating stars",
                 stack: "HTML5, CSS, Javascript, Jquery, Grunt, NPM, Webstorm, Bitballon",
-                role: "Conceptualization, Front-End",
+                role: "Conceptualization, Front-End Development",
                 img: "src/assets/images/projects/movieRatingStars/star-rating-screenshot.png",
                 date: "2016-01"
             },
@@ -153,7 +153,7 @@
                 title: "Goodbedford.com",
                 url: "http://www.goodbedford.com/",
                 description: "Portfolio and Blog showcasing present and past projects.",
-                stack: "HTML5, CSS, Javascript, Jquery, Bootstrap, Sass, Karma, Grunt, Jasmine, Emmet, Sketch, Webstorm",
+                stack: "HTML5, CSS, Javascript, Jquery, Bootstrap, Sass, Karma, Grunt, Jasmine, NPM, Emmet, Sketch, Webstorm",
                 role: "Conceptualization, Front-End & Back-End Development, Testing",
                 img: "src/assets/images/projects/gbBlog/new-goodbedford-screenshot.png",
                 date: "2016-02"

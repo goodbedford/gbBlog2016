@@ -29,7 +29,7 @@
   border: none; }
   .btn-menu:hover {
     color: #ff9901;
-    background-color: gray; }
+    background-color: white; }
 
 .info-panel {
   border-bottom: 2px solid #BAC0AC;
@@ -40,8 +40,9 @@
 
 .header {
   font-size: 1.25em;
-  margin: 0.5em;
+  margin-top: 0.5em;
   padding: 0.5em;
+  background-color: #ff9901;
   border-bottom: 1px solid #353535; }
 
 .header-title-btm {

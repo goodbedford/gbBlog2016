@@ -3,12 +3,12 @@
         <!--<div class="col-xs-12 col-sm-6 col-sm-offset-3">-->
         <div class="splash-panel"></div>
         <div class="" ng-repeat="project in project.bio.projects track by $index">
-            <!-- project -->
+            <!-- projectSpec -->
             <div class="col-sm-4" ng-if="$index < 3">
                 <div class="row">
                     <div class="">
                         <a ng-href="{{project.url}}" class="project-link">
-                            <img src="{{project.img}}" alt="{{project.title}} +logo image" class="img-medium">
+                            <img ng-src="{{project.img}}" alt="{{project.title}} +logo image" class="img-medium">
                             <div class="project-title">{{project.title}}</div>
                         </a>
                     </div>
@@ -29,7 +29,7 @@
     </div>
     <div class="row">
         <div class="" ng-repeat="project in project.bio.projects track by $index" ng-if="$index >= 3 && $index <6">
-            <!-- project -->
+            <!-- projectSpec -->
             <div class="col-sm-4 splash-panel">
                 <div class="row">
                     <div class="">
@@ -54,7 +54,7 @@
     </div>
     <div class="row">
         <div class="" ng-repeat="project in project.bio.projects track by $index">
-            <!-- project -->
+            <!-- projectSpec -->
             <div class="col-sm-4 splash-panel" ng-if="$index >= 6 && $index < 9">
                 <div class="row">
                     <div class="">
