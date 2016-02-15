@@ -22,7 +22,7 @@
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>6/6</span>
+        <span class='fraction'>8/8</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -32,12 +32,12 @@
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>2/2</span>
+        <span class='fraction'>3/3</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>6/6</span>
+        <span class='fraction'>8/8</span>
       </div>
     </div>
   </div>
@@ -188,7 +188,11 @@
 143
 144
 145
-146</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+146
+147
+148
+149
+150</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1×</span>
@@ -201,6 +205,10 @@
 <span class="cline-any cline-yes">5×</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4×</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -343,19 +351,25 @@
     BlogService.$inject = [];
 &nbsp;
     function BlogService() {
-        var factory = [
-            {
-                title: "Whole new dimension to being a web developer",
-                date: "2015-29-07",
-                author: "Goodbedford",
-                content: {
-                    thanks: "I must do a quick thank you to all my friends and family. "+
+        var factory = {
+                query:query
+        };
+&nbsp;
+        function query() {
+&nbsp;
+            return [
+                    {
+                        title: "Whole new dimension to being a web developer",
+                        date: "2015-29-07",
+                        author: "Goodbedford",
+                        content: {
+                            thanks: "I must do a quick thank you to all my friends and family. "+
                             "This article is dedicated to some local organizers and Yassin at "+
                             "&lt;a href='http://www.meetup.com/Ionic-SF/'&gt;SF Ionic Meet Up&lt;/a&gt;" +
                             "and Ruben from &lt;a href='https://codeclass.io/#/'&gt;Code.io&lt;/a&gt;. "+
                             "Thanks for a great event.",
 &nbsp;
-                    body:   "I got stickers from Max from &lt;a href='http://drifty.com/'&gt;Drifty&lt;/a&gt;. I thought that was coolness. "+
+                            body:   "I got stickers from Max from &lt;a href='http://drifty.com/'&gt;Drifty&lt;/a&gt;. I thought that was coolness. "+
                             "I know I’m new to the game but I hope it last forever. I hope to always be inspired and humbled " +
                             "by our work. The programming community is large and small much like San Francisco and the Bay Area. "+
                             "I was at a meet up at &lt;a href='http://www.hackreactor.com/program'&gt;HR&lt;/a&gt; "+
@@ -376,19 +390,19 @@
                             "He said they are currently looking to &lt;a href='http://www.couchbase.com/careers'&gt;hire&lt;/a&gt; "+
                             "but what I really found interesting was his &lt;a href='https://blog.nraboy.com/2015/07/my-first-year-of-blogging-and-the-stats-around-it/'&gt; blog&lt;/a&gt;. "+
                             "He has some really tight posts. All in all a good day.",
-                    },
+                        },
 &nbsp;
-                img: "src/assets/images/gb-logos/gblogo8.png"
-            },
-            {
-                title: "Code of Conduct",
-                date: "2015-28-06",
-                author: "Goodbedford",
-                content: {
-                    thanks: "I would like to give thanks to everyone who helped me this week. In no particular order " +
+                        img: "src/assets/images/gb-logos/gblogo8.png"
+                    },
+                    {
+                        title: "Code of Conduct",
+                        date: "2015-28-06",
+                        author: "Goodbedford",
+                        content: {
+                            thanks: "I would like to give thanks to everyone who helped me this week. In no particular order " +
                             "Rich and Steve from &lt;a href='http://nodeschool.io/sanfrancisco/'&gt;Node School SF&lt;/a&gt;.",
 &nbsp;
-                    body:   "I loved when Rich read the &lt;a href='https://github.com/nodeschool/sanfrancisco/blob/gh-pages/code-of-conduct.md'&gt;code of conduct&lt;/a&gt; for each "+
+                            body:   "I loved when Rich read the &lt;a href='https://github.com/nodeschool/sanfrancisco/blob/gh-pages/code-of-conduct.md'&gt;code of conduct&lt;/a&gt; for each "+
                             "person who arrived late. The &lt;span class='highlight'&gt;code of conduct&lt;/span&gt; made me feel welcomed and set the tone for a safe enviroment to learn. "+
                             "Traffic was crazy this weekend. It's Pride weekend and the Supreme Court decision was " +
                             "right on time. I have to thank &lt;a href='https://github.com/smallhaxe'&gt;@smallhaxe&lt;/a&gt; for the welcome. We had a few talks about node and " +
@@ -397,20 +411,20 @@
                             "out there. Here are a few resources that helped me. "+
                             "&lt;a href='https://developer.mozilla.org/en-US/'&gt;MDN&lt;/a&gt; great for Javascript. "+
                             "&lt;a href='http://getbootstrap.com/css/'&gt;Bootstrap&lt;/a&gt; great for CSS.",
-                    },
+                        },
 &nbsp;
-                img: "src/assets/images/gb-logos/gblogo9.png"
-            },
-            {
-                title: "Add these details to the plan",
-                date: "2015-29-05",
-                author: "Goodbedford",
-                content: {
-                    thanks: "I would like to give thanks to Joe Blau and Maurice Cherry. "+
+                        img: "src/assets/images/gb-logos/gblogo9.png"
+                    },
+                    {
+                        title: "Add these details to the plan",
+                        date: "2015-29-05",
+                        author: "Goodbedford",
+                        content: {
+                            thanks: "I would like to give thanks to Joe Blau and Maurice Cherry. "+
                             "To all the listeners and my family. I am inspired and filled "+
                             "with creation.",
 &nbsp;
-                    body:   "I was listening to this podcast and I was like, "+
+                            body:   "I was listening to this podcast and I was like, "+
                             "Yo I really like what Joe is saying. I  can relate to his hustle "+
                             "and fascination. The curiosity and amazement of riding the wave of "+
                             "intense education. A wealth of experience from all angles of his life. "+
@@ -421,19 +435,19 @@
                             "details to my plan&lt;/span&gt;.&lt;br /&gt;" +
                             "&lt;a href='https://joeblau.com/'&gt;Joe Blau&lt;/a&gt; was on &lt;a href='http://revisionpath.com/'&gt;Revision Path&lt;/a&gt; podcast. "+
                             "&lt;a href='http://revisionpath.com/?s=joe+blau'&gt;Episode 65&lt;/a&gt;",
-                },
+                        },
 &nbsp;
-                img: "src/assets/images/gb-logos/gblogo14.png"
-            },
-            {
-                title: "Accepted",
-                date: "2015-08-05",
-                author: "Goodbedford",
-                content:{
-                    thanks: "I would like to thank my family and friends for their help and"+
+                        img: "src/assets/images/gb-logos/gblogo14.png"
+                    },
+                    {
+                        title: "Accepted",
+                        date: "2015-08-05",
+                        author: "Goodbedford",
+                        content:{
+                            thanks: "I would like to thank my family and friends for their help and"+
                             "encouragement to purse my dreams of being a developer",
 &nbsp;
-                    body:   "I got &lt;span class='highlight'&gt;accepted&lt;/span&gt; into a Web Development Immersive Bootcamp."+
+                            body:   "I got &lt;span class='highlight'&gt;accepted&lt;/span&gt; into a Web Development Immersive Bootcamp."+
                             "I am glad my previous work has paid off. Now, as I look into"+
                             "the future there is so much further to go. I could be"+
                             "daunting when thinking about where to begin.  So I will"+
@@ -447,18 +461,18 @@
                             "have a job at the other end.  I have quit both my jobs"+
                             "making over lets just say 75 grand to go back to school."+
                             "I am honestly giving it my best chance. Wish me luck."
-                },
-                img: "src/assets/images/gb-logos/gblogo15.png"
-            },
-            {
-                title: "Hacker School",
-                date: "2015-29-01",
-                author: "Goodbedford",
-                content:{
-                    thanks: "This is relaunch of my personal blog. I would like to " +
+                        },
+                        img: "src/assets/images/gb-logos/gblogo15.png"
+                    },
+                    {
+                        title: "Hacker School",
+                        date: "2015-29-01",
+                        author: "Goodbedford",
+                        content:{
+                            thanks: "This is relaunch of my personal blog. I would like to " +
                             "remember to thank people who have added to my growth. So, I say thanks!",
 &nbsp;
-                    body:   "Today I went to my &lt;span class='highlight'&gt;hacker school&lt;/span&gt;. I said I can do this,"+
+                            body:   "Today I went to my &lt;span class='highlight'&gt;hacker school&lt;/span&gt;. I said I can do this,"+
                             "the people are there. The craziest thing about it,"+
                             "was a good feeling. Just walking in there I knew I could"+
                             "just bring a lot to the cohort. I am already envisioning them."+
@@ -469,13 +483,11 @@
                             "most, I saw people I saw on the internet. Amazing. I mean I" +
                             "saw someone who answered the online group video conference" +
                             "question. Peace, I gotta go put in work."
-                    },
-                img: "src/assets/images/gb-logos/gblogo25.png"
-            }
-        ];
-&nbsp;
-&nbsp;
-&nbsp;
+                        },
+                        img: "src/assets/images/gb-logos/gblogo25.png"
+                    }
+            ];
+        }
         return factory;
     }
 })();</pre></td></tr>
@@ -484,7 +496,7 @@
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sat Feb 13 2016 03:05:34 GMT-0800 (PST)
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Mon Feb 15 2016 12:04:05 GMT-0800 (PST)
 </div>
 </div>
 <script src="../../../prettify.js"></script>

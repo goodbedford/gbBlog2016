@@ -10,7 +10,7 @@
     function BlogController(BlogService) {
         var blog = this;
 
-        blog.blogs = BlogService;
+        blog.blogs = BlogService.query();
 
         blog.placeCssHeader = function(index, arr, cssProp) {
             if(index === arr.length -1) {
