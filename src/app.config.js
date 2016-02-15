@@ -51,8 +51,8 @@
 
         //remove hash in urls
         $locationProvider.html5Mode({
-            enabled: true,
-            requireBase: true
+            enabled: false,
+            requireBase: false
         });
     }
 
