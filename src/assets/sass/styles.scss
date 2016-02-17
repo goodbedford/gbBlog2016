@@ -53,11 +53,12 @@ $accent3: gray;
 }
 .header {
   font-size: 1.25em;
-  margin-top: 0.5em;
+  margin-top: 0;
   padding: 0.5em;
   background-color: $secondary;
   border-bottom: 1px solid $primary;
 }
+
 .header-title-btm {
   margin-bottom: 1em;
 }
@@ -107,8 +108,7 @@ img.icon {
     border-bottom: 1px solid $primary;
   }
 }
-.nav-title {
-}
+
 .splash-panel {
   //background-color: $accent3;
   //border: 5px solid $accent3;
