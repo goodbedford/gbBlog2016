@@ -187,7 +187,13 @@
                 url: "https://generalassemb.ly/",
                 img: "src/assets/images/community/general-assembly-screenshot.png",
                 description: "At General Assembly, we are creating a global community of individuals empowered to pursue work they love, by offering full-time immersive programs, long-form courses, and classes and workshops on the most relevant skills of the 21st century – from web development and user experience design, to business fundamentals, to data science, to product management and digital marketing."
-    }
+            },
+            {
+                title: "Developer Week 2016",
+                url: "http://www.developerweek.com/about/",
+                img: "src/assets/images/community/HiringMixer-DeveloperWeek2016-screenshot.png",
+                description: "DeveloperWeek 2016 is San Francisco’s largest one-week tech event series with over 60 week-long events including the DeveloperWeek 2016 Conference & Expo, the DeveloperWeek Hackathon (1,000+ attendees), Official Hiring Mixer (800+ hirable developers and 50+ hiring companies), and dozens of city-wide partner events. "
+            }
         ];
 
         return factory;
