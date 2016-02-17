@@ -22,14 +22,14 @@
             <div class="row">
                 <div class="col-xs-12" ng-hide="nav.isClosed">
                     <ul class="list-unstyled nav-bar">
-                        <li><a ui-sref="home">Goodbedford.com</a></li>
-                        <li><a ui-sref="blog">Blog</a></li>
-                        <li><a ui-sref="projects">Projects</a></li>
-                        <li><a ui-sref="resume">Resume</a></li>
-                        <li><a ui-sref="community">Community</a></li>
-                        <li><a ng-href="https://www.linkedin.com/in/goodbedford">LinkedIn</a></li>
-                        <li><a ng-href="https://github.com/goodbedford">Github</a></li>
-                        <li><a ui-sref="contact">Contact</a></li>
+                        <li><a ui-sref="home" ng-click="nav.isClosed = !nav.isClosed">Goodbedford.com</a></li>
+                        <li><a ui-sref="blog" ng-click="nav.isClosed = !nav.isClosed">Blog</a></li>
+                        <li><a ui-sref="projects" ng-click="nav.isClosed = !nav.isClosed">Projects</a></li>
+                        <li><a ui-sref="resume" ng-click="nav.isClosed = !nav.isClosed">Resume</a></li>
+                        <li><a ui-sref="community" ng-click="nav.isClosed = !nav.isClosed">Community</a></li>
+                        <li><a ng-href="https://www.linkedin.com/in/goodbedford" ng-click="nav.isClosed = !nav.isClosed">LinkedIn</a></li>
+                        <li><a ng-href="https://github.com/goodbedford" ng-click="nav.isClosed = !nav.isClosed">Github</a></li>
+                        <li><a ui-sref="contact" ng-click="nav.isClosed = !nav.isClosed">Contact</a></li>
                     </ul>
                 </div>
             </div>
