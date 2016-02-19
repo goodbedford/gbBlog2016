@@ -12,39 +12,125 @@
         $stateProvider
             .state("home", {
                 url: "/",
-                controller: "HomeController",
-                controllerAs: "home",
-                templateUrl: "src/layout/home.tpl.html"
+                views: {
+                    "nav": {
+                        controller: "NavController",
+                        controllerAs: "nav",
+                        templateUrl: "src/layout/nav.tpl.html"
+                    },
+                    "content": {
+                        controller: "HomeController",
+                        controllerAs: "home",
+                        templateUrl: "src/layout/home.tpl.html"
+                    },
+                    "footer": {
+                        controller: "LogoController",
+                        controllerAs: "logo",
+                        templateUrl: "src/layout/logoFooter.tpl.html"
+                    }
+                }
             })
             .state("resume", {
                 url: "/resume",
-                controller: "ResumeController",
-                controllerAs: "resume",
-                templateUrl: "src/components/resume/resume.tpl.html"
+                views: {
+                    "nav": {
+                        controller: "NavController",
+                        controllerAs: "nav",
+                        templateUrl: "src/layout/nav.tpl.html"
+                    },
+                    "content": {
+                        controller: "ResumeController",
+                        controllerAs: "resume",
+                        templateUrl: "src/components/resume/resume.tpl.html"
+                    },
+                    "footer": {
+                        controller: "LogoController",
+                        controllerAs: "logo",
+                        templateUrl: "src/layout/logoFooter.tpl.html"
+                    }
+                }
             })
             .state("contact", {
                 url: "/contact",
-                controller: "ResumeController",
-                controllerAs: "contact",
-                templateUrl: "src/components/contact/contact.tpl.html"
+                views: {
+                    "nav": {
+                        controller: "NavController",
+                        controllerAs: "nav",
+                        templateUrl: "src/layout/nav.tpl.html"
+                    },
+                    "content": {
+                        controller: "ResumeController",
+                        controllerAs: "contact",
+                        templateUrl: "src/components/contact/contact.tpl.html"
+                    },
+                    "footer": {
+                        controller: "LogoController",
+                        controllerAs: "logo",
+                        templateUrl: "src/layout/logoFooter.tpl.html"
+                    }
+                }
             })
             .state("community", {
                 url: "/community",
-                controller: "ResumeController",
-                controllerAs: "community",
-                templateUrl: "src/components/community/community.tpl.html"
+                views: {
+                    "nav": {
+                        controller: "NavController",
+                        controllerAs: "nav",
+                        templateUrl: "src/layout/nav.tpl.html"
+                    },
+                    "content": {
+                        controller: "ResumeController",
+                        controllerAs: "community",
+                        templateUrl: "src/components/community/community.tpl.html"
+                    },
+                    "footer": {
+                        controller: "LogoController",
+                        controllerAs: "logo",
+                        templateUrl: "src/layout/logoFooter.tpl.html"
+                    }
+                }
             })
             .state("projects", {
                 url: "/projects",
-                controller: "ProjectController",
-                controllerAs: "project",
-                templateUrl: "src/components/projects/projects.tpl.html"
+                views: {
+                    "nav": {
+                        controller: "NavController",
+                        controllerAs: "nav",
+                        templateUrl: "src/layout/nav.tpl.html"
+                    },
+                    "content": {
+                        controller: "ProjectController",
+                        controllerAs: "project",
+                        templateUrl: "src/components/projects/projects.tpl.html"
+                    },
+                    "footer": {
+                        controller: "LogoController",
+                        controllerAs: "logo",
+                        templateUrl: "src/layout/logoFooter.tpl.html"
+                    }
+                }
+
             })
             .state("blog", {
                 url: "/goodblog",
-                controller: "BlogController",
-                controllerAs: "blog",
-                templateUrl: "src/components/blog/blog.tpl.html"
+                views: {
+                    "nav": {
+                        controller: "NavController",
+                        controllerAs: "nav",
+                        templateUrl: "src/layout/nav.tpl.html"
+                    },
+                    "content": {
+                        controller: "BlogController",
+                        controllerAs: "blog",
+                        templateUrl: "src/components/blog/blog.tpl.html"
+                    },
+                    "footer": {
+                        controller: "LogoController",
+                        controllerAs: "logo",
+                        templateUrl: "src/layout/logoFooter.tpl.html"
+                    }
+                }
+
             });
 
         $urlRouterProvider.otherwise("/");

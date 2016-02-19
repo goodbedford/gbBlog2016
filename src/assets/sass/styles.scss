@@ -32,6 +32,16 @@ $accent3: gray;
   background-color: rgba(0,0,0,0.5);
   z-index: 20;
 }
+.brand-logo {
+  color: $primary;
+  text-decoration: none;
+  padding: 2px 6px;
+  &:hover {
+    color: $secondary;
+    background-color: $accent2;
+    text-decoration: none;
+  }
+}
 
 .btn-menu {
   color:$primary;
