@@ -9,6 +9,10 @@ $accent2: white;
 $accent3: gray;
 
 
+.active {
+  background-color: $secondary;
+}
+
 .bio-detail {
   color: $primary;
 }

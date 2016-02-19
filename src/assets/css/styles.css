@@ -1,4 +1,7 @@
 /* sass styles*/
+.active {
+  background-color: #ff9901; }
+
 .bio-detail {
   color: #353535; }
 
