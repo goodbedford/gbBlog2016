@@ -199,6 +199,14 @@
                 url: "http://www.developerweek.com/about/",
                 img: "src/assets/images/community/HiringMixer-DeveloperWeek2016-screenshot.png",
                 description: "DeveloperWeek 2016 is San Francisco’s largest one-week tech event series with over 60 week-long events including the DeveloperWeek 2016 Conference & Expo, the DeveloperWeek Hackathon (1,000+ attendees), Official Hiring Mixer (800+ hirable developers and 50+ hiring companies), and dozens of city-wide partner events. "
+            },
+            {
+                title: "TechUP 2016",
+                url: "https://www.facebook.com/lesbianswhotech/posts/1253203418026374",
+                img: "src/assets/images/community/techup-hiring.png",
+                description: "TechUP connects diverse tech talent with companies who believe diversity is an advantage, and that inclusive teams are stronger, smarter, and better." +
+                             "TechUP intentionally recruits badass, underrepresented and talented tech professionals with a variety of skills. We especially seek women, people of color, LGBTQ individuals, and people who live with a disability." +
+                             "TechUP Career Fair Hosted @Twitter HQ Feb 27th"
             }
         ];
 

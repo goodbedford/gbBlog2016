@@ -7,8 +7,11 @@
         </div>
         <div class="row">
             <div class="col-xs-5 col-sm-2 logos" ng-repeat="logo in logo.logos">
-                <div class="text-center"><img ng-src="{{logo.img}}" alt="pic" class="icon"/></div>
-                <div class="text-center">{{logo.name}}</div>
+                <div class="logo-wrapper">
+                    <div class="text-center"><img ng-src="{{logo.img}}" alt="pic" class="icon"/></div>
+                    <div class="text-center">{{logo.name}}</div>
+                </div>
+
             </div>
         </div>
     </div>

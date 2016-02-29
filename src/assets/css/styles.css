@@ -1,5 +1,6 @@
 /* sass styles*/
 .active {
+  color: white !important;
   background-color: #ff9901; }
 
 .bio-detail {
@@ -25,10 +26,18 @@
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 20; }
 
+.blog-seperator {
+  height: 9em;
+  background-color: rgba(255, 153, 1, 0.9);
+  position: relative;
+  top: 8em;
+  margin-top: -6em; }
+
 .brand-logo {
   color: #353535;
   text-decoration: none;
-  padding: 2px 6px; }
+  padding: 0.2em 1em;
+  margin: 0 0 0 15px; }
   .brand-logo:hover {
     color: #ff9901;
     background-color: white;
@@ -77,10 +86,6 @@ img.icon {
 .icon {
   padding: 0.5em; }
 
-.label-project {
-  color: #353535;
-  background-color: #ff9901; }
-
 .logos {
   padding: 0.5em;
   margin: 0.5em; }
@@ -90,6 +95,9 @@ img.icon {
   padding: 2em 0;
   border-top: 2px solid #353535;
   background-color: white; }
+
+.logo-wrapper {
+  padding: 5px; }
 
 .nav-bar {
   color: #353535;
@@ -106,10 +114,24 @@ img.icon {
   .nav-bar li {
     border-bottom: 1px solid #353535; }
 
+.project-img-wrapper {
+  background-color: white; }
+
 .project-link {
   text-decoration: none; }
   .project-link:hover {
     text-decoration: none; }
+
+.project-title {
+  font-size: 1.5em;
+  color: white;
+  background-color: rgba(255, 153, 1, 0.9);
+  padding: .5em; }
+
+.project-label {
+  color: white;
+  background-color: #ff9901;
+  padding: 0 1em; }
 
 .splash-panel {
   padding: 2em;
@@ -121,9 +143,16 @@ img.icon {
 .spacer-small {
   margin-top: 4em; }
 
+.spacer-small-btm {
+  margin-bottom: 4em; }
+
 .tag-line {
-  color: #ff9901;
-  margin-top: 0.5em;
+  color: #353535;
+  padding: 1em;
   line-height: 1.25em; }
+
+.tag-line-community {
+  background-color: rgba(255, 153, 1, 0.08);
+  border: 1px solid rgba(53, 53, 53, 0.1); }
 
 /*# sourceMappingURL=styles.css.map */
