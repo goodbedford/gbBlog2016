@@ -10,6 +10,6 @@
     function LogoController(LogoService) {
         var logo = this;
 
-        logo.logos = LogoService;
+        logo.logos = LogoService.query();
     }
 })();

@@ -107,6 +107,7 @@
             {
                 title: "#OOTD (outfit of the day)",
                 url: "http://ootd-demo.herokuapp.com/",
+                repo: "https://github.com/goodbedford/ootd",
                 description: "Responsive Mobile First application designed to save outfits into a personal lookbook. Demonstrates proficient use of third-party APIs (Instagram) and effective code.",
                 stack: "REST API, HTML, CSS, JavaScript, JSON, EJS, Heroku, MongoDB(NoSql), Node & Express",
                 role: "Conceptualization, Front-End & Back-End Development",
@@ -116,6 +117,7 @@
             {
                 title: "atCon",
                 url: "https://atcon.herokuapp.com/",
+                repo: "https://github.com/sswbelser/atCon",
                 description: "A Rich web application built for creating one-off events similar to Eventbrite.",
                 stack: "REST API, HTML, CSS, JavaScript, JSON, Heroku, Ruby, Ruby on Rails, PostgreSQL, AWS S3",
                 role: "Conceptualization, Git Management & Back-End Development(Routing & Modeling)",
@@ -125,6 +127,7 @@
             {
                 title: "Enrollment Data Viz",
                 url: "https://enrollment-data.herokuapp.com/",
+                repo: "https://github.com/goodbedford/enrollment",
                 description: "A Data visualization projectSpec showcasing various chart types including animated line, bar, pie, donut and small multiples.",
                 stack: " C3, D3, HTML, CSS, Javascript, Node, Express & Heroku",
                 role: "Conceptualization, Front-End & Back-End Development",
@@ -134,6 +137,7 @@
             {
                 title: "Duplicate Finder",
                 url: "http://duplicatefinder.bitballoon.com/",
+                repo: "https://github.com/goodbedford/Finder",
                 description: "Duplicate Finder is a small demonstration of finding matching strings in another string algorithm.",
                 stack: "Angular, Material Design, UI Router, Bower, Emmet, Webstorm, BitBallon",
                 role: "Conceptualization & Front-End Development",
@@ -143,6 +147,7 @@
             {
                 title: "Movie Rating Stars",
                 url: "http://gb-movie-rating.bitballoon.com/",
+                repo: "https://github.com/goodbedford/ratings",
                 description: "UI demo of movie rating stars",
                 stack: "HTML5, CSS, Javascript, Jquery, Grunt, NPM, Webstorm, Bitballon",
                 role: "Conceptualization, Front-End Development",
@@ -152,6 +157,7 @@
             {
                 title: "Goodbedford.com",
                 url: "http://www.goodbedford.com/",
+                repo: "https://github.com/goodbedford/gbBlog2016",
                 description: "Portfolio and Blog showcasing present and past projects.",
                 stack: "HTML5, CSS, Javascript, Jquery, Bootstrap, Sass, Karma, Grunt, Jasmine, NPM, Emmet, Sketch, Webstorm",
                 role: "Conceptualization, Front-End & Back-End Development, Testing",

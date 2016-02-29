@@ -93,12 +93,17 @@ img.icon {
   width: 100%;
 }
 
+
+.icon {
+  padding: 0.5em;
+}
+.label-project {
+  color: $primary;
+  background-color: $secondary;
+}
 .logos {
   padding: 0.5em;
   margin: 0.5em;
-}
-.icon {
-  padding: 0.5em;
 }
 
 .logo-footer {
@@ -107,6 +112,7 @@ img.icon {
   border-top: 2px solid $primary;
   background-color: $accent2;
 }
+
 .nav-bar {
   color: $primary;
   background-color: $accent2;

@@ -74,12 +74,16 @@ img.icon {
   height: 300px;
   width: 100%; }
 
+.icon {
+  padding: 0.5em; }
+
+.label-project {
+  color: #353535;
+  background-color: #ff9901; }
+
 .logos {
   padding: 0.5em;
   margin: 0.5em; }
-
-.icon {
-  padding: 0.5em; }
 
 .logo-footer {
   margin-top: 1.5em;

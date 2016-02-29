@@ -12,6 +12,6 @@
 
         home.bio = BioService;
         home.test="beddy";
-        home.logos = LogoService;
+        home.logos = LogoService.query();
     }
 })();
