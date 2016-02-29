@@ -5,7 +5,7 @@
             <div ng-repeat="org in community.bio.community track by $index">
                 <div ng-class="community.placeCssHeaderNo1st($index, community.bio.community,'spacer-small')">
                     <a class="project-link" ng-href="{{org.url}}">
-                        <div class="text-center">
+                        <div class="text-center animated fadeInUp">
                             <img ng-src="{{org.img}}" alt="{{org.title}} +logo" class="img-medium"/>
                         </div>
                         <div class="project-title">{{org.title}}</div>
