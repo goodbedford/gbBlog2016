@@ -4,9 +4,13 @@
             <h3 class="header-title-btm">Community Memberships</h3>
             <div ng-repeat="org in community.bio.community track by $index">
                 <div ng-class="community.placeCssHeaderNo1st($index, community.bio.community,'spacer-small')">
-                    <img ng-src="{{org.img}}" alt="{{org.title}} +logo" class="img-medium"/>
-                    <p>{{org.title}}</p>
-                    <p class="tag-line">{{org.description}}</p>
+                    <a class="project-link" ng-href="{{org.url}}">
+                        <div class="text-center animated fadeInUp">
+                            <img ng-src="{{org.img}}" alt="{{org.title}} +logo" class="img-medium"/>
+                        </div>
+                        <div class="project-title">{{org.title}}</div>
+                    </a>
+                    <p class="tag-line tag-line-community">{{org.description}}</p>
                 </div>
             </div>
         </div>

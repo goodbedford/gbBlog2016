@@ -10,6 +10,7 @@ $accent3: gray;
 
 
 .active {
+  color: $accent2 !important;
   background-color: $secondary;
 }
 
@@ -36,10 +37,20 @@ $accent3: gray;
   background-color: rgba(0,0,0,0.5);
   z-index: 20;
 }
+
+.blog-seperator {
+  height: 9em;
+  background-color: rgba($secondary, 0.9);
+  position: relative;
+  top: 8em;
+  margin-top: -6em;
+  //opacity: .5
+}
 .brand-logo {
   color: $primary;
   text-decoration: none;
-  padding: 2px 6px;
+  padding: 0.2em 1em;
+  margin: 0 0 0 15px;
   &:hover {
     color: $secondary;
     background-color: $accent2;
@@ -97,10 +108,7 @@ img.icon {
 .icon {
   padding: 0.5em;
 }
-.label-project {
-  color: $primary;
-  background-color: $secondary;
-}
+
 .logos {
   padding: 0.5em;
   margin: 0.5em;
@@ -112,7 +120,9 @@ img.icon {
   border-top: 2px solid $primary;
   background-color: $accent2;
 }
-
+.logo-wrapper {
+  padding: 5px;
+}
 .nav-bar {
   color: $primary;
   background-color: $accent2;
@@ -132,15 +142,33 @@ img.icon {
   }
 }
 
+.project-img-wrapper {
+  background-color: $accent2;
+  //position: relative;
+  //bottom: -2.5em;
+  //z-index: 5;
+}
 .project-link {
   text-decoration: none;
   &:hover {
   text-decoration: none;
   }
 }
+.project-title {
+  font-size: 1.5em;
+  color: $accent2;
+  background-color: rgba($secondary, 0.9);
+  //position: relative;
+  //z-index: 10;
+  padding: .5em;
+}
+.project-label {
+  color: $accent2;
+  background-color: $secondary;
+  padding: 0 1em;
+
+}
 .splash-panel {
-  //background-color: $accent3;
-  //border: 5px solid $accent3;
   padding: 2em;
   margin-top: 1em;
 }
@@ -150,11 +178,17 @@ img.icon {
 .spacer-small {
   margin-top: 4em;
 }
-.tag-line {
-  color: $secondary;
-  margin-top: 0.5em;
-  line-height: 1.25em;
-  //font-size: 0.75em;
+.spacer-small-btm {
+  margin-bottom: 4em;
 }
-
+.tag-line {
+  color: $primary;
+  //margin-top: 0.5em;
+  padding: 1em;
+  line-height: 1.25em;
+}
+.tag-line-community {
+  background-color: rgba($secondary, 0.08);
+  border: 1px solid rgba($primary, 0.1);
+}
 
