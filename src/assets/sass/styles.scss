@@ -132,6 +132,12 @@ img.icon {
   }
 }
 
+.project-link {
+  text-decoration: none;
+  &:hover {
+  text-decoration: none;
+  }
+}
 .splash-panel {
   //background-color: $accent3;
   //border: 5px solid $accent3;
