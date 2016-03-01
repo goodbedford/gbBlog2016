@@ -3,7 +3,7 @@
         <div class="splash-panel">
             <h3 class="header-title-btm">Community Memberships</h3>
             <div ng-repeat="org in community.bio.community track by $index">
-                <div class=" animated fadeInUp" ng-class="community.placeCssHeaderNo1st($index, community.bio.community,'spacer-small')">
+                <div class=" animated fadeIn" ng-class="community.placeCssHeaderNo1st($index, community.bio.community,'spacer-small')">
                     <a class="project-link" ng-href="{{org.url}}">
                         <div class="text-center">
                             <img ng-src="{{org.img}}" alt="{{org.title}} +logo" class="img-medium"/>
