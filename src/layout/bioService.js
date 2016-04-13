@@ -105,6 +105,16 @@
         ];
         factory.projects = [
             {
+                title: "#OOTD-2016 (outfit of the day 2016)",
+                url: "http://ootd-app.herokuapp.com/",
+                repo: "https://github.com/goodbedford/gbBlog2016",
+                description: "Responsive Mobile First application designed to save outfits into a personal lookbook. Demonstrates proficient use of third-party APIs (Instagram) and effective code.",
+                stack: "Angular.js 1.x, REST API, HTML, CSS, JavaScript, JSON, Karma, Jasmine, Gulp, Heroku, MongoDB(NoSql), Node & Express",
+                role: "Conceptualization, Front-End & Back-End Development, Testing",
+                img: "src/assets/images/projects/ootd-2016/ootd2016-screenshot.png",
+                date: "2016-04"
+            },
+            {
                 title: "#OOTD (outfit of the day)",
                 url: "http://ootd-demo.herokuapp.com/",
                 repo: "https://github.com/goodbedford/ootd",
