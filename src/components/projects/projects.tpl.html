@@ -18,7 +18,7 @@
                         <li><span class="project-label">Site:</span></li>
                         <li><a ng-href="{{project.url}}" class="project-link">{{project.url}}</a></li>
                         <li><span class="project-label">Code:</span></li>
-                        <li><a ng-href="{{project.repo}}" class="project-link">{{project.repo}}</a></li>
+                        <li><a ng-href="{{project.repo}}" class="project-link">{{project.repo || "Private"}}</a></li>
                         <li><span class="project-label">Stack:</span></li>
                         <li>{{project.stack}}</li>
                         <li><span class="project-label">Role:</span></li>
