@@ -112,7 +112,7 @@ img.icon {
       color: white;
       background-color: #ff9901; }
   .nav-bar li {
-    border-bottom: 1px solid #353535; }
+    border-bottom: 0px solid #353535; }
 
 .project-img-wrapper {
   background-color: white; }
