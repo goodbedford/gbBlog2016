@@ -39,7 +39,7 @@
         <div ng-class="resume.placeCssHeader($index, resume.bio.workExperience,'info-panel')">
           <p>
             <span class="bio-label">Company: </span>
-            <span class="bio-detail">{{job.company}}</span>
+            <a ng-href="{{job.url}}"><span class="bio-detail">{{job.company}}</span></a>
           </p>
           <p>
             <span class="bio-label">Title: </span>

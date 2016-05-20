@@ -28,8 +28,8 @@
 				phone: "510-435-2945",
 				url: "http://oaklanddigital.org/",
 				description: [
-					"Create wireframes & documentation for BRIDGEGOOD.com client side views.",
-					"Design & Implement responsive HTML5 layouts utilizing HTML, CSS, Bootstrap, Angular 1.x, JSON.",
+					"Create UI wireframes & documentation for BRIDGEGOOD.com.",
+					"Design & Implement responsive site UI utilizing HTML5, CSS, Bootstrap, Angular 1.x, JSON.",
 					"Manage version control with Git software."
 				],
 				timePeriod: {
@@ -45,9 +45,9 @@
 				phone: "415-592-6885",
 				url: "https://generalassemb.ly/",
 				description: [
-					"Develop lesson for Intro to Javascript that ensure mastery of materials.",
-					"Teach Javascript & Jquery fundamentals.",
-					"Foster General Assembly culture and team building to produce a vigorous working & learning environment.",
+					"Develop lessons for Intro to Javascript that prepare students for making interactive web apps.",
+					"Teach Javascript & Jquery to ensure understanding of programming fundamentals.",
+					"Foster General Assembly culture and team building to produce a vigorous working & learning environment."
 				],
 				timePeriod: {
 					start: "2016-04",
@@ -151,7 +151,7 @@
 			},
 			{
 				title: "#OOTD (outfit of the day)",
-				url: "http://ootd-demo.herokuapp.com/",
+				url: "https://ootd-app.herokuapp.com/#/",
 				repo: "https://github.com/goodbedford/ootd2016",
 				description: "Responsive Mobile First application designed to save outfits into a personal lookbook. Demonstrates proficient use of third-party APIs (Instagram) and effective code.",
 				stack: "REST API, HTML, CSS, JavaScript, JSON, Angular 1.x, Heroku, MongoDB(NoSql), Node & Express",
