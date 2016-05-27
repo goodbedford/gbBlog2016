@@ -15,7 +15,16 @@
     <!-- remove # from url -->
 </head>
     <body ng-cloak>
-       <div ui-view></div>
+        <div class="container">
+            <!-- nav bar-->
+            <!--<div ng-include="'src/layout/nav.tpl.html'"></div>-->
+            <div ui-view="nav"></div>
+            <!-- main view -->
+            <div ui-view="content"></div>
+        </div>
+        <!-- logo footer -->
+        <!--<div ng-include="'src/layout/logoFooter.tpl.html'"></div>-->
+        <div ui-view="footer"></div>
         <script src="dist/js/package.min.js"></script>
     </body>
 </html>

@@ -2,7 +2,7 @@
     "use strict";
 
     angular
-        .module("gbBlog")
+        .module("gbBlog.home")
         .controller("HomeController", HomeController);
 
     HomeController.$inject = ["BioService", "LogoService"];

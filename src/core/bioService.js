@@ -2,7 +2,7 @@
 	"use strict";
 
 	angular
-		.module("gbBlog")
+		.module("gbBlog.core")
 		.factory("BioService", BioService);
 
 	BioService.$inject = [];

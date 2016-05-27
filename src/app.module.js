@@ -4,11 +4,14 @@
     angular
         .module("gbBlog", [
 
-            // angular dependencies
-            "ngSanitize",
-
-            //third party
-            "ui.router"
+         // core
+          "gbBlog.core",
+					"gbBlog.blog",
+					"gbBlog.home",
+					"gbBlog.layout",
+					"gbBlog.projects",
+					"gbBlog.resume",
+					"gbBlog.community"
 
         ]);
 

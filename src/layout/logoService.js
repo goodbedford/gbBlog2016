@@ -2,7 +2,7 @@
     "use strict";
 
     angular
-        .module("gbBlog")
+        .module("gbBlog.layout")
         .factory("LogoService", LogoService);
 
     LogoService.$inject = [];

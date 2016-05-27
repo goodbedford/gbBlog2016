@@ -2,7 +2,7 @@
     "use strict";
 
     angular
-        .module("gbBlog")
+        .module("gbBlog.resume")
         .controller("ResumeController", ResumeController);
 
     ResumeController.$inject = ["BioService"];
