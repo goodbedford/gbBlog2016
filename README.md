@@ -24,3 +24,6 @@ http://www.goodbedford.com/
 - Conceptualization, 
 - Front-End Development 
 - Unit Testing 
+
+**Getting Started**
+http-server
