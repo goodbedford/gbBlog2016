@@ -9,17 +9,6 @@
 
 	function config($locationProvider, $stateProvider, $urlRouterProvider) {
 
-		$stateProvider
-			.state("site.contact", {
-				url: "/contact",
-				views: {
-					"content": {
-						controller: "ResumeController",
-						controllerAs: "contact",
-						templateUrl: "src/components/contact/contact.tpl.html"
-					}
-				}
-			});
 		$urlRouterProvider.otherwise("/site/home");
 
 		//remove hash in urls

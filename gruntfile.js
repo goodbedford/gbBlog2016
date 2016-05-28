@@ -50,6 +50,8 @@
 							"src/components/resume/resume.config.js",
 							"src/components/community/community.module.js",
 							"src/components/community/community.config.js",
+							"src/components/contact/contract.module.js",
+							"src/components/contact/contract.config.js",
 							// "src/components/blog/blogService.js",
 							// "src/components/blog/blogController.js",
 							"src/components/**/*.js",
@@ -57,9 +59,7 @@
 							"src/layout/layout.module.js",
 							"src/layout/layout.config.js",
 							"src/layout/**/*.js"
-
-
-
+							
 						]
 					}
 				},

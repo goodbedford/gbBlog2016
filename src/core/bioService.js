@@ -254,6 +254,12 @@
 			}
 		];
 
+		factory.getDetail = getDetail;
+
+		function getDetail(id) {
+			var project = factory.projects[id];
+			return project;
+		}
 		return factory;
 	}
 })();

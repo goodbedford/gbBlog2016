@@ -11,8 +11,8 @@
 					"gbBlog.layout",
 					"gbBlog.projects",
 					"gbBlog.resume",
-					"gbBlog.community"
-
+					"gbBlog.community",
+					"gbBlog.contract"
         ]);
 
 })();

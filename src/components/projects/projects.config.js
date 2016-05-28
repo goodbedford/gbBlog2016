@@ -18,6 +18,16 @@
 						templateUrl: "src/components/projects/projects.tpl.html"
 					}
 				}
+			})
+			.state("site.details", {
+				url: "/projects/:projectId",
+				views: {
+					"content": {
+						controller: "ProjectDetailsController",
+						controllerAs: "projectDetails",
+						templateUrl: "src/components/projects/projectDetails.tpl.html"
+					}
+				}
 			});
 	}
 })();

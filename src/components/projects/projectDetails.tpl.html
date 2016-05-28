@@ -1,0 +1,26 @@
+<div class="row bg">
+    <!-- projectSpec -->
+    <div class="col-xs-12 col-xs-6 col-sm-offset-3 splash-panel animated fadeInUp">
+      <div class="row">
+        <div class="project-img-wrapper text-center">
+          <a ng-href="{{projectDetails.project.url}}" class="project-link">
+            <img ng-src={{projectDetails.project.img}} alt="{{projectDetails.project.title}} +logo image" class="img-medium">
+          </a>
+        </div>
+        <div class="project-title">{{projectDetails.project.title}}</div>
+      </div>
+      <div class="row">
+        <ul class="list-unstyled">
+          <li>{{projectDetails.project.description}}</li>
+          <li><span class="project-label">Site:</span></li>
+          <li><a ng-href="{{projectDetails.project.url}}" class="project-link">{{projectDetails.project.url}}</a></li>
+          <li><span class="project-label">Code:</span></li>
+          <li><a ng-href="{{projectDetails.project.repo}}" class="project-link">{{projectDetails.project.repo || "Private"}}</a></li>
+          <li><span class="project-label">Stack:</span></li>
+          <li>{{projectDetails.project.stack}}</li>
+          <li><span class="project-label">Role:</span></li>
+          <li>{{projectDetails.project.role}}</li>
+        </ul>
+      </div>
+    </div>
+</div>
