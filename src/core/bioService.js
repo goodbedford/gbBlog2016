@@ -140,6 +140,16 @@
 		];
 		factory.projects = [
 			{
+				title: "Awwwards-clone",
+				url: "https://goodbedford.github.io/awards/",
+				repo: "https://github.com/goodbedford/awards",
+				description: "This site is an demo clone of http://www.awwwards.com/",
+				stack: "HTML5,CSS3, Javascript, SASS, Gulp",
+				role: "Front End Developer, I looked at Awwwards.com and made a clone of it. Pay attention to the responsive layout created with flexbox.",
+				img: "src/assets/images/projects/awards/main-page.png",
+				date: "2016-06"
+			},
+			{
 				title: "BRIDGEGOOD.com",
 				url: "http://bridgegood.com/",
 				repo: "",
