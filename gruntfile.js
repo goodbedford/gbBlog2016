@@ -60,6 +60,7 @@
 							"src/layout/layout.config.js",
 							"src/layout/**/*.js"
 							
+							
 						]
 					}
 				},

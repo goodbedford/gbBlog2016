@@ -74,12 +74,14 @@
 .highlight {
   background-color: #FAFAC6; }
 
+.img-full {
+  width: 100%; }
+
 img.icon {
   height: 50px; }
 
 .img-medium {
-  height: 200px;
-  max-width: 100%; }
+  height: 200px; }
 
 .img-large {
   height: 300px;

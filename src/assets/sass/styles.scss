@@ -93,13 +93,16 @@ $accent3: gray;
   background-color: $accent;
 }
 
+.img-full {
+  width: 100%;
+}
 img.icon {
   height: 50px;
   //width: 100px;
 }
 .img-medium {
   height: 200px;
-  max-width: 100%;
+  //max-width: 100%;
 }
 .img-large {
   height: 300px;
