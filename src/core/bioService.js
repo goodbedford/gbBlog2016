@@ -163,7 +163,7 @@
 				title: "#OOTD (outfit of the day)",
 				url: "https://ootd-app.herokuapp.com/#/",
 				repo: "https://github.com/goodbedford/ootd2016",
-				description: "Responsive Mobile First application designed to save outfits into a personal lookbook. Demonstrates proficient use of third-party APIs (Instagram) and effective code.NOTE:*Instagram has changed its API Policy so his Errors.",
+				description: "Responsive Mobile First application designed to save outfits into a personal lookbook. Demonstrates proficient use of third-party APIs (Instagram) and effective code.NOTE:*Instagram has changed its API Policy so this Errors.",
 				stack: "REST API, HTML, CSS, JavaScript, JSON, Angular 1.x, Heroku, MongoDB(NoSql), Node & Express",
 				role: "Conceptualization, Front-End & Back-End Development",
 				img: "src/assets/images/projects/ootd2016/ootd2016-screenshot.png",
