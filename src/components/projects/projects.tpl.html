@@ -5,7 +5,7 @@
       <!-- projectSpec -->
       <div class="col-sm-4 splash-panel animated fadeInUp" ng-if="$index < 3">
         <div class="row">
-          <div class="project-img-wrapper text-center">
+          <div class="project-img-wrapper project-img-wrapper--sm text-center">
             <a ui-sref="site.details({projectId: $index})" class="project-link">
               <img ng-src={{project.img}} alt="{{project.title}} +logo image" class="img-medium">
             </a>
@@ -34,8 +34,8 @@
       <!-- projectSpec -->
       <div class="col-sm-4 splash-panel animated fadeInUp">
         <div class="row">
-          <div class="project-img-wrapper text-center">
-            <a ng-href="{{project.url}}" class="project-link">
+          <div class="project-img-wrapper project-img-wrapper--sm text-center">
+            <a ui-sref="site.details({projectId: $index})" class="project-link">
               <img ng-src={{project.img}} alt="{{project.title}} +logo image" class="img-medium">
             </a>
           </div>
@@ -62,8 +62,8 @@
       <!-- projectSpec -->
       <div class="col-sm-4 splash-panel" ng-if="$index >= 6 && $index < 9">
         <div class="row">
-          <div class="project-img-wrapper text-center">
-            <a ng-href="{{project.url}}" class="project-link">
+          <div class="project-img-wrapper project-img-wrapper--sm text-center">
+            <a ui-sref="site.details({projectId: $index})" class="project-link">
               <img ng-src={{project.img}} alt="{{project.title}} +logo image" class="img-medium">
             </a>
           </div>

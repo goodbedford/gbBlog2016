@@ -176,7 +176,7 @@
 				description: "Portfolio and Blog showcasing present and past projects.",
 				stack: "HTML5, CSS, Javascript, Jquery, Bootstrap, Sass, Karma, Grunt, Jasmine, NPM, Emmet, Sketch, Webstorm",
 				role: "Conceptualization, Front-End & Back-End Development, Testing",
-				img: "src/assets/images/projects/gbBlog/new-goodbedford-screenshot.png",
+				img: "src/assets/images/projects/gbBlog/projects-page.png",
 				date: "2016-02"
 			},
 			{

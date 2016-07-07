@@ -75,13 +75,19 @@
   background-color: #FAFAC6; }
 
 .img-full {
-  width: 100%; }
+  width: 100%;
+  transition: all 0.5s; }
+  .img-full:hover {
+    opacity: 0.25; }
 
 img.icon {
   height: 50px; }
 
 .img-medium {
-  height: 200px; }
+  max-width: 100%;
+  transition: all 0.5s; }
+  .img-medium:hover {
+    opacity: 0.25; }
 
 .img-large {
   height: 300px;
@@ -119,7 +125,14 @@ img.icon {
     border-bottom: 0px solid #353535; }
 
 .project-img-wrapper {
-  background-color: white; }
+  background-color: white;
+  transition: all 0.5s; }
+  .project-img-wrapper:hover {
+    background: linear-gradient(white 50%, orange); }
+
+.project-img-wrapper--sm {
+  height: 200px;
+  overflow: hidden; }
 
 .project-link {
   text-decoration: none; }

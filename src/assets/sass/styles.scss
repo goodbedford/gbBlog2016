@@ -7,7 +7,7 @@ $secondary-lite: #E1F3FF; //light blue
 $accent: #FAFAC6; //light yellow
 $accent2: white;
 $accent3: gray;
-
+$accent-black: black;
 
 .active {
   color: $accent2 !important;
@@ -95,14 +95,22 @@ $accent3: gray;
 
 .img-full {
   width: 100%;
+  transition: all 0.5s;
+  &:hover {
+    opacity: 0.25;
+  }
 }
 img.icon {
   height: 50px;
   //width: 100px;
 }
 .img-medium {
-  height: 200px;
-  //max-width: 100%;
+  //height: 200px;
+  max-width: 100%;
+  transition: all 0.5s;
+  &:hover {
+    opacity: 0.25;
+  }
 }
 .img-large {
   height: 300px;
@@ -148,10 +156,16 @@ img.icon {
 }
 
 .project-img-wrapper {
-  background-color: $accent2;
-  //position: relative;
-  //bottom: -2.5em;
-  //z-index: 5;
+  //background: linear-gradient(white 50%, orange);
+  background-color: white;
+  transition: all 0.5s;
+  &:hover {
+    background: linear-gradient(white 50%, orange);
+  }
+}
+.project-img-wrapper--sm {
+  height: 200px;
+  overflow: hidden;
 }
 .project-link {
   text-decoration: none;
