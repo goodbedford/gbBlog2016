@@ -140,6 +140,7 @@ img.icon {
   color: $primary;
   background-color: $accent2;
   border-bottom: 1px solid $primary;
+  font-size: 0px;
   a {
     color: $primary;
     display: block;
@@ -152,6 +153,8 @@ img.icon {
   }
   li {
     border-bottom: 0px solid $primary;
+    font-size: 14px;
+    padding: 0px 0px;
   }
 }
 

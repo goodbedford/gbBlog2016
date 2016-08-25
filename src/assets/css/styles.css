@@ -112,7 +112,8 @@ img.icon {
 .nav-bar {
   color: #353535;
   background-color: white;
-  border-bottom: 1px solid #353535; }
+  border-bottom: 1px solid #353535;
+  font-size: 0px; }
   .nav-bar a {
     color: #353535;
     display: block;
@@ -122,7 +123,9 @@ img.icon {
       color: white;
       background-color: #ff9901; }
   .nav-bar li {
-    border-bottom: 0px solid #353535; }
+    border-bottom: 0px solid #353535;
+    font-size: 14px;
+    padding: 0px 0px; }
 
 .project-img-wrapper {
   background-color: white;
