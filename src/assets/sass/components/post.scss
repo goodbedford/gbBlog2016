@@ -1,0 +1,103 @@
+//
+// component post
+//
+@import '../colors';
+@import '../fonts';
+@import '../mixins/link';
+@import '../mixins/transition';
+.posts {
+  margin  : 1rem 2rem;
+  overflow: hidden;
+}
+.post {
+  margin: 3rem auto;
+  width : 100%;
+}
+.post__date {
+  color    : $color-gray;
+  font-size: $font-size-md;
+}
+.post__link {
+  @include link-plain;
+  @include transition-color-default;
+  color        : $color-green;
+  border-bottom: 1px dashed $color-gray-lite;
+}
+.post__link:hover {
+  @include link-plain-hover;
+  color: $color-rust;
+}
+.post__link--more {
+  @include link-plain;
+  @include transition-color-default;
+  color: $color-green;
+}
+.post__link__img-container {
+  display : block;
+  position: relative;
+}
+.post__link__thumbnail-container {
+  overflow: hidden;
+  height  : 12rem;
+  width   : 100%;
+}
+.post__link__thumbnail-container:after {
+  @include transition-default;
+  background-color: $color-white;
+  display         : block;
+  content         : "";
+  opacity         : 0;
+}
+.post__link:hover .post__link__thumbnail-container:after {
+  background-color: $color-white;
+  bottom          : 0;
+  content         : "";
+  display         : block;
+  left            : 0;
+  // opacity         : 0.2;
+  position        : absolute;
+  right           : 0;
+  top             : 0;
+  z-index         : 20;
+}
+.post__link__thumbnail-container__img {
+  @include transition-md;
+  background-color: $color-white;
+  border          : 1px solid $color-gray-lite;
+  box-shadow      : 1px 1px 3px #F5F5F5;
+  overflow        : hidden;
+  width           : 100%;
+}
+.post__link:hover .post__link__thumbnail-container__img {
+  transform: scale(1.03);
+}
+.post__link__title {
+  font-size: $font-size-md;
+  padding  : 1rem 0;
+}
+.post__text {
+  font-family   : 'Open Sans', sans-serif;
+  padding-bottom: 1rem;
+}
+@media screen and (min-width: 480px) {
+  .posts {
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: space-between;
+  }
+  .post {
+    // flex: 1 1 auto;
+    margin: 3rem 2rem;
+    width : calc(50% - 4rem );
+  }
+  .post__link__thumbnail-container {
+    height: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .post {
+    // flex: 1 1 auto;
+    margin: 3rem 1rem;
+    width : calc(25% - 2rem );
+  }
+}

@@ -1,0 +1,21 @@
+//
+// component button
+//
+@import '../colors';
+@import '../fonts';
+@import '../mixins/button';
+@import '../mixins/backgrounds';
+
+
+.btn {
+  @include btn-default;
+  @include background-01;
+  color: $color-red-dark;
+  border: 1px solid $color-red;
+}
+.btn:hover {
+  @include btn-default-hover;
+  @include background-01-hover;
+  // color: $color-white;
+  // background: $color-red;
+}

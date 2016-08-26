@@ -1,0 +1,44 @@
+//
+// component footer
+//
+@import '../colors';
+@import '../fonts';
+@import '../mixins/link';
+@import '../mixins/transition';
+
+
+
+.footer {
+  align-items: flex-start;
+  border-top: 1px solid $color-gray-lite;
+  color: $color-gray;
+  display: flex;
+  font-size: $font-size-xs;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+}
+.footer__icon {
+  @include transition-color-default;
+  font-size: $font-size-lg;
+  margin: 0 0.5rem;
+}
+.footer__icon:hover {
+  color: $color-black;
+}
+.footer__link {
+  @include link-default;
+  @include transition-color-default;
+}
+.footer__link:hover {
+  @include link-default-hover;
+}
+.footer__section {
+  flex: 1 1 auto;
+}
+.footer__text {
+
+}
+
+@media screen and (min-width: 480px) {
+
+}

@@ -1,0 +1,171 @@
+//
+// component menu
+//
+@import '../colors';
+@import '../fonts';
+@import '../mixins/link';
+@import '../mixins/transition';
+.menu {
+  background-color: $color-black;
+  display         : flex;
+  flex-direction  : row;
+}
+.menu__btn {
+  @include link-default;
+  @include transition-color-default;
+  background-color: transparent;
+  border          : 1px solid $color-leather;
+}
+.menu__btn:hover {
+  @include link-default-hover;
+  background-color: transparent;
+  border          : 1px solid $color-leather;
+}
+.menu__img-container {
+  align-items     : center;
+  background-color: $color-black;
+  background      : linear-gradient(180deg, rgba($color-green ,0.5) 30%, $color-rust 30% );
+  border          : 8px solid $color-black;
+  border-radius   : 50%;
+  display         : flex;
+  height          : 10rem;
+  justify-content : center;
+  position        : relative;
+  width           : 10rem;
+  transform       : translateY(20rem);
+}
+/* possible different logo design using ::after
+.menu__img-container:after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  height: 10rem;
+  left: calc(50% - 5rem);
+  position: absolute;
+  width: 10rem;
+  z-index: -2;
+  background: linear-gradient(90deg, rgba($color-green ,0.5) 50%, $color-rust 50% );
+}
+*/
+.menu__img-container__img {
+  color         : $color-white;
+  display       : inline-block;
+  font-size     : $font-size-lg;
+  margin        : 2rem 0;
+  text-transform: capitalize;
+}
+.menu__link {
+  @include link-default;
+  @include transition-color-default;
+  font-size: $font-size-md;
+}
+.menu__link:hover {
+  @include link-default-hover;
+}
+.menu__link__icon {
+  @include link-default;
+  font-size: $font-size-md;
+  // display  : none;
+}
+.menu__section {
+  display        : flex;
+  justify-content: space-around;
+  padding        : 1.6rem 0.6rem;
+}
+// .menu__section--sm-screen {
+//   flex           : 1 1;
+//   justify-content: space-between;
+// }
+.menu__section--border-bottom {
+  border-bottom: 1px solid rgba($color-gray-lite, 0.5);
+}
+.menu__section--left {}
+.menu__section--left--flex-order-reverse {}
+.menu__section--right {}
+@media screen and (max-width: 767px) {
+  .menu__section--sm {
+    align-items    : center;
+    display        : flex;
+    flex           : 1 1;
+    flex-direction : row;
+    justify-content: space-between;
+  }
+  // .menu__section--border-bottom {
+  //   border-bottom: 0;
+  // }
+  // .menu__section--left {
+  //   align-self     : flex-start;
+  //   display        : flex;
+  //   flex           : 1 1 auto;
+  //   justify-content: flex-start;
+  //   // order          : 1;
+  // }
+  // .menu__section--right {
+  //   // order: 2;
+  //   flex: 2 1 auto;
+  // }
+}
+@media screen and (min-width: 768px) {
+  .menu__link {
+    font-size: $font-size-md-plus;
+  }
+  // .menu__link:hover .menu__link__icon {
+  //   transform: translateY(0.2rem);
+  // }
+  // .menu__link__icon {
+  //   transition: transition-transform-default;
+  //   // transition: color 0.2s, transform 1s;
+  //   display   : flex;
+  //   padding   : 0.5rem 0;
+  // }
+  .menu__section {
+    flex: 4 1;
+  }
+  .menu__section--left {
+    flex           : 2 1;
+    justify-content: flex-start;
+  }
+  .menu__section--right {
+    align-items    : center;
+    display        : flex;
+    flex           : 2 1;
+    justify-content: flex-end;
+  }
+}
+// @media screen and (min-width: 992px) {
+//   .menu {
+//     background-color: white;
+//     display         : flex;
+//     flex-direction  : column;
+//   }
+//   .menu__img-container {
+//     height: 12rem;
+//     width : 12rem;
+//   }
+//   .menu__link {
+//     display        : flex;
+//     flex-direction : row;
+//     font-size      : $font-size-md-plus;
+//     justify-content: flex-start;
+//     margin         : 1rem 0;
+//   }
+//   .menu__link:hover .menu__link__icon {
+//     transform: translateX(0.2rem);
+//   }
+//   .menu__link__icon {
+//     margin: 0 1rem;
+//   }
+//   .menu__section {
+//     background-color: white;
+//   }
+//   .menu__section--left {
+//     align-self: center;
+//     padding   : 0;
+//   }
+//   .menu__section--right {
+//     display       : flex;
+//     flex-direction: column;
+//     position      : relative;
+//     z-index       : 20;
+//   }
+// }

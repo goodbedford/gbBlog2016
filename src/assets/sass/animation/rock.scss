@@ -1,0 +1,28 @@
+//
+// animation rock
+//
+.ani-rock {
+  animation-name           : rock-animation;
+  animation-duration       : 3s;
+  animation-fill-mode      : forwards;
+  animation-iteration-count: 5;
+  // animation-timing-function: cubic-bezier(.42, 0, .58, 1);
+  animation-timing-function: ease-in-out;
+  position                 : relative;
+}
+@keyframes rock-animation {
+  0% {
+    transform-origin: left;
+    transform       : rotate(0deg);
+  }
+  25% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    opacity  : 1;
+    transform: rotate(0deg);
+  }
+}

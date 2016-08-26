@@ -1,0 +1,24 @@
+//
+// mixins button
+//
+@import '../fonts';
+@import '../colors';
+@mixin btn-default {
+  border         : 1px solid;
+  border-radius  : 4px;
+  display        : inline-block;
+  font-size      : $font-size-md;
+  font-weight    : bold;
+  margin         : 0.5rem 1rem;
+  min-width      : 5rem;
+  outline        : 0;
+  padding        : 0.5rem 1rem;
+  text-align     : center;
+  text-decoration: none;
+  text-shadow    : #fff 0 1px 1px;
+  text-transform : capitalize;
+  transition     : all 0.2s ease-in-out;
+}
+@mixin btn-default-hover {
+  text-decoration: none;
+}

@@ -1,0 +1,25 @@
+<div class="row animated fadeIn">
+  <div class="splash-panel">
+    <div class="col-xs-12">
+      <div class="blog-seperator row animated fadeInUp"></div>
+      <div class="row spacer-small-btm">
+        <div class="hidden-xs col-sm-3 col-sm-offset-2">
+          <div><img ng-src={{blogDetails.blog.img}} alt="{{blogDetails.blog.title}} logo" class="img-responsive" /></div>
+        </div>
+        <div class="col-xs-12 col-sm-5">
+          <div>
+            <h3 class="bio-header">{{blogDetails.blog.title}}</h3>
+            <div><span>{{blogDetails.blog.date}}</span></div>
+            <p>{{blogDetails.blog.author}}</p>
+
+            <div>
+              <p class="bio-detail-2" ng-bind-html="blogDetails.blog.content.thanks"></p>
+              <p ng-bind-html="blogDetails.blog.content.body"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2"></div>
+      </div>
+    </div>
+  </div>
+</div>

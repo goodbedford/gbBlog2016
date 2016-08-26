@@ -1,0 +1,19 @@
+//
+// mixins transition
+//
+@mixin transition-default {
+  transition                : 0.2s all;
+  transition-timing-function: ease-in-out;
+}
+@mixin transition-color-default {
+  transition: 0.2s color;
+}
+@mixin transition-background-default {
+  transition: 0.2s background-color;
+}
+@mixin transition-md {
+  transition: 1s all;
+}
+@mixin transition-transform-default {
+  transition: 0.2s transform;
+}

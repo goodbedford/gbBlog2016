@@ -1,0 +1,21 @@
+//
+// animation logo
+//
+.ani-logo-in {
+  animation-name           : logo-in-animation;
+  animation-delay          : 1s;
+  animation-duration       : 1.2s;
+  animation-fill-mode      : forwards;
+  animation-timing-function: cubic-bezier(.42, 0, .58, 1);
+}
+@keyframes logo-in-animation {
+  0% {
+    transform: translateY(200px);
+  }
+  80% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

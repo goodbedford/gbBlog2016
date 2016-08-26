@@ -1,28 +1,22 @@
 <div class="row animated fadeIn">
-    <div class="splash-panel">
-        <div ng-repeat="blog in blog.blogs">
-            <div class="col-xs-12">
-                <div class="blog-seperator row animated fadeInUp"></div>
-                <div class="row spacer-small-btm">
-                    <div class="hidden-xs col-sm-3 col-sm-offset-2">
-                        <div><img ng-src={{blog.img}} alt="{{blog.title}} logo" class="img-responsive"/></div>
-                    </div>
-                    <div class="col-xs-12 col-sm-5">
-                        <div>
-                            <h3 class="bio-header">{{blog.title}}</h3>
-                            <div><span>{{blog.date}}</span></div>
-                            <p>{{blog.author}}</p>
-
-                            <div>
-                                <p class="bio-detail-2" ng-bind-html="blog.content.thanks"></p>
-                                <p ng-bind-html="blog.content.body"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-2"></div>
-                </div>
+  <div class="dots-pattern-sm-leather"></div>
+  <div class="main-content">
+    <div ng-repeat="blog in blog.blogs">
+      <div class="col-xs-12">
+        <div class="row blogs">
+          <a class="blog blog--link" ui-sref="site.blogDetails({blogId: $index})">
+            <!-- <figure class="blog__section blog__section--left">
+              <div class="blog__img-container">
+                <img class="blog__img-container__img" ng-src="{{blog.img}}" alt="{{blog.title}} logo">
+              </div>
+            </figure> -->
+            <div class="blog__section blog__section--right">
+              <h3 class="blog__title">{{blog.title}}</h3>
+              <div class="blog__date">{{blog.date}}</div>
             </div>
-
+          </a>
         </div>
+      </div>
     </div>
+  </div>
 </div>

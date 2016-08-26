@@ -1,0 +1,110 @@
+/// component ads
+//
+@import "../base";
+@import '../colors';
+@import '../fonts';
+@import '../mixins/button';
+@import '../mixins/link';
+@import '../mixins/transition';
+@import '../animation/fade'; // @import '../animation/rock';
+$ads-font-size-md: 2.4rem;
+.ads {
+  display        : flex;
+  justify-content: flex-start;
+  margin         : 0.5rem;
+  position       : relative;
+  width          : 200px;
+}
+.ads__button {
+  @include transition-default;
+  background-color: $color-white;
+  border          : 1px solid $color-black;
+  // border-radius   : 50%;
+  color           : $color-black;
+  font-size       : 1rem;
+  height          : 2rem;
+  right           : 0;
+  outline         : 0;
+  position        : absolute;
+  text-align      : center;
+  top             : 0;
+  width           : 2rem;
+}
+.ads__button:hover {
+  background-color: $color-red;
+  color           : $color-white;
+  transform       : translateX(0.3rem);
+}
+.ads__link {
+  @include link-plain;
+  color         : $color-white;
+  display       : flex;
+  flex-direction: column;
+  height        : 100%;
+  width         : 100%;
+}
+.ads__link:hover {
+  @include link-plain;
+  background-color: $color-green;
+  color           : $color-white;
+  display         : flex;
+  flex-direction  : column;
+  height          : 100%;
+  width           : 100%;
+}
+.ads__link--right .ads__text {
+  color: $color-white;
+}
+.ads__prices {
+  align-items    : center;
+  display        : flex;
+  justify-content: space-around;
+}
+.ads__section {
+  align-items    : center;
+  border         : 1px solid $color-black;
+  display        : flex;
+  justify-content: center;
+  height         : 4.8rem;
+  overflow       : hidden;
+  width          : 10rem;
+  text-align     : center;
+}
+.ads__section--left {
+  align-items     : center;
+  background-color: $color-white;
+  border-right    : 1px dashed $color-black;
+  display         : flex;
+  flex-direction  : column;
+  flex-wrap       : wrap;
+}
+.ads__section--right {
+  align-items     : center;
+  background-color: $color-black;
+  display         : flex;
+  flex-direction  : column;
+  position        : relative;
+  border-left     : 1px dashed $color-white;
+}
+.ads__title {}
+.ads__text {
+  // border: 1px solid red;
+  color: $color-black;
+  // font-size: $ads-font-size-md;
+}
+.ads__text--price {
+  color  : $color-black;
+  display: inline;
+  // position: relative;
+  width  : 33.33%;
+  // font-size: $font-size-lg;
+}
+.ads__text--white {
+  color: $color-white;
+  // font-size: $font-size-lg;
+}
+@media screen and (max-width: 479px) {
+  .ads__hide {
+    display: none;
+  }
+}

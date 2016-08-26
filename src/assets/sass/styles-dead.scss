@@ -1,5 +1,4 @@
 /* sass styles*/
-
 $primary: #353535; //dark gray
 $primary-lite: #BAC0AC; //gray-green
 $secondary: #ff9901; //orange
@@ -8,12 +7,10 @@ $accent: #FAFAC6; //light yellow
 $accent2: white;
 $accent3: gray;
 $accent-black: black;
-
 .active {
-  color: $accent2 !important;
+  color           : $accent2 !important;
   background-color: $secondary;
 }
-
 .bio-detail {
   color: $primary;
 }
@@ -21,53 +18,51 @@ $accent-black: black;
   color: $secondary;
 }
 .bio-header {
-  color: $accent2;
+  color           : $accent2;
   background-color: $accent3;
-  padding: 5px;
+  padding         : 5px;
 }
 .bio-label {
-  color: $secondary;
+  color      : $secondary;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size  : 1.2em;
 }
 .blackout {
-  position: relative;
-  width: 100%;
-  height: 100%;
+  position        : relative;
+  width           : 100%;
+  height          : 100%;
   background-color: rgba(0,0,0,0.5);
-  z-index: 20;
+  z-index         : 20;
 }
-
 .blog-seperator {
-  height: 9em;
-  background-color: rgba($secondary, 0.9);
-  position: relative;
-  top: 8em;
-  margin-top: -6em;
+  height                   : 9em;
+  background-color         : rgba($secondary, 0.9);
+  position                 : relative;
+  top                      : 8em;
+  margin-top               : -6em;
   border-bottom-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-right-radius  : 20px;
   //opacity: .5
 }
 .brand-logo {
-  color: $primary;
+  color          : $primary;
   text-decoration: none;
-  padding: 0.2em 1em;
-  margin: 0 0 0 15px;
+  padding        : 0.2em 1em;
+  margin         : 0 0 0 15px;
   &:hover {
-    color: $secondary;
+    color           : $secondary;
     background-color: $accent2;
-    text-decoration: none;
+    text-decoration : none;
   }
 }
-
 .btn-menu {
-  color:$primary;
+  color           : $primary;
   background-color: $secondary;
-  outline-width: 0px;
+  outline-width   : 0;
   //font-size: 1.25em;
-  border: none;
+  border          : none;
   &:hover {
-    color: $secondary;
+    color           : $secondary;
     background-color: $accent2;
   }
 }
@@ -79,22 +74,20 @@ $accent-black: black;
   height: 200px;
 }
 .header {
-  font-size: 1.25em;
-  margin-top: 0;
-  padding: 0.5em;
+  font-size       : 1.25em;
+  margin-top      : 0;
+  padding         : 0.5em;
   background-color: $secondary;
-  border-bottom: 1px solid $primary;
+  border-bottom   : 1px solid $primary;
 }
-
 .header-title-btm {
   margin-bottom: 1em;
 }
 .highlight {
   background-color: $accent;
 }
-
 .img-full {
-  width: 100%;
+  width     : 100%;
   transition: all 0.5s;
   &:hover {
     opacity: 0.25;
@@ -106,7 +99,7 @@ img.icon {
 }
 .img-medium {
   //height: 200px;
-  max-width: 100%;
+  max-width : 100%;
   transition: all 0.5s;
   &:hover {
     opacity: 0.25;
@@ -114,84 +107,78 @@ img.icon {
 }
 .img-large {
   height: 300px;
-  width: 100%;
+  width : 100%;
 }
-
-
 .icon {
   padding: 0.5em;
 }
-
 .logos {
   padding: 0.5em;
-  margin: 0.5em;
+  margin : 0.5em;
 }
-
 .logo-footer {
-  margin-top: 1.5em;
-  padding: 2em 0;
-  border-top: 2px solid $primary;
+  margin-top      : 1.5em;
+  padding         : 2em 0;
+  border-top      : 2px solid $primary;
   background-color: $accent2;
 }
 .logo-wrapper {
   padding: 5px;
 }
 .nav-bar {
-  color: $primary;
+  color           : $primary;
   background-color: $accent2;
-  border-bottom: 1px solid $primary;
-  font-size: 0px;
+  border-bottom   : 1px solid $primary;
+  font-size       : 0;
   a {
-    color: $primary;
-    display: block;
-    padding: 1.2em 1em;
+    color          : $primary;
+    display        : block;
+    padding        : 1.2em 1em;
     text-decoration: none;
     &:hover {
-      color: $accent2;
+      color           : $accent2;
       background-color: $secondary;
     }
   }
   li {
-    border-bottom: 0px solid $primary;
-    font-size: 14px;
-    padding: 0px 0px;
+    border-bottom: 0 solid $primary;
+    font-size    : 14px;
+    padding      : 0;
   }
 }
-
 .project-img-wrapper {
   //background: linear-gradient(white 50%, orange);
   background-color: white;
-  transition: all 0.5s;
+  transition      : all 0.5s;
   &:hover {
     background: linear-gradient(white 50%, orange);
   }
 }
 .project-img-wrapper--sm {
-  height: 200px;
+  height  : 200px;
   overflow: hidden;
 }
 .project-link {
   text-decoration: none;
   &:hover {
-  text-decoration: none;
+    text-decoration: none;
   }
 }
 .project-title {
-  font-size: 1.5em;
-  color: $accent2;
+  font-size       : 1.5em;
+  color           : $accent2;
   background-color: rgba($secondary, 0.9);
   //position: relative;
   //z-index: 10;
-  padding: .5em;
+  padding         : 0.5em;
 }
 .project-label {
-  color: $accent2;
+  color           : $accent2;
   background-color: $secondary;
-  padding: 0 1em;
-
+  padding         : 0 1em;
 }
 .splash-panel {
-  padding: 2em;
+  padding   : 2em;
   margin-top: 1em;
 }
 .spacer-large {
@@ -204,13 +191,12 @@ img.icon {
   margin-bottom: 4em;
 }
 .tag-line {
-  color: $primary;
+  color      : $primary;
   //margin-top: 0.5em;
-  padding: 1em;
+  padding    : 1em;
   line-height: 1.25em;
 }
 .tag-line-community {
   background-color: rgba($secondary, 0.08);
-  border: 1px solid rgba($primary, 0.1);
+  border          : 1px solid rgba($primary, 0.1);
 }
-

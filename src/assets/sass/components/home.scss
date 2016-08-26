@@ -1,0 +1,46 @@
+//
+// component feature
+//
+@import '../colors';
+@import '../fonts';
+@import '../mixins/backgrounds';
+@import '../mixins/link';
+@import '../mixins/transition';
+@import '../animation/fade';
+.home {
+  padding: 1rem;
+}
+.home__title--fancy {
+  background-color: $color-white;
+  color           : $color-leather;
+  transform       : translate(-2rem, 0);
+}
+.home__footer {
+  background-color: $color-leather;
+  margin          : 1rem -5rem;
+  padding         : 1rem 2rem;
+}
+.home__title {
+  @include drop-shadow-01;
+  background-color: $color-leather;
+  color           : $color-black;
+  display         : inline-block;
+  font-size       : $font-size-xxl;
+  padding         : 1rem;
+  text-align      : center;
+}
+.home__title--sm {
+  background-color: $color-black;
+  color           : $color-leather;
+  display         : inline-block;
+  font-size       : $font-size-xl;
+  text-align      : right;
+}
+.home__title--xs {
+  background-color: $color-black;
+  color           : $color-leather;
+  display         : inline-block;
+  font-size       : $font-size-md;
+  text-align      : right;
+}
+.home-row {}
