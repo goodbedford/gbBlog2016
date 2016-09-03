@@ -1,0 +1,184 @@
+//
+// component project
+//
+@import '../colors';
+@import '../fonts';
+@import '../mixins/link';
+@import '../mixins/transition';
+.projects {
+  align-content  : flex-start;
+  align-items    : center;
+  display        : flex;
+  flex-wrap      : wrap;
+  justify-content: center;
+  margin         : 1rem 2rem;
+  overflow       : hidden;
+}
+.project {
+  margin: 3rem 1rem;
+  width : 300px;
+}
+// .project:hover {
+//   transform: translateY(-5px);
+// }
+.project__date {
+  color    : $color-gray;
+  font-size: $font-size-md;
+}
+.project__link {
+  @include link-plain;
+  @include transition-color-default;
+  color: $color-leather;
+}
+.project__link:hover {
+  @include link-plain-hover;
+  color: $color-white;
+}
+.project__link--plain {
+  @include link-plain;
+  @include transition-color-default;
+}
+.project__link--detail,
+.project__link--detail:visited {
+  @include transition-color-default;
+  color     : $color-white;
+  font-size : $font-size-md;
+  word-break: break-all;
+}
+.project__link--detail:hover {
+  color: $color-leather;
+}
+.project__img-container {
+  border  : 3px solid $color-black;
+  display : block;
+  height  : 180px;
+  overflow: hidden;
+  position: relative;
+}
+.project__img-container--full {
+  height: auto;
+}
+.project__img-container__img {
+  @include transition-default;
+  background-color: $color-black;
+  width           : 100%;
+}
+.project__title {
+  background   : linear-gradient(140deg, $color-black 90%, $color-leather 90%);
+  color        : $color-leather;
+  font-size    : $font-size-md-plus;
+  overflow     : hidden;
+  padding      : 1rem 0.5rem;
+  text-overflow: ellipsis;
+  white-space  : nowrap;
+}
+.project__text {
+  color      : $color-leather;
+  font-family: 'Open Sans', sans-serif;
+  font-size  : $font-size-sm;
+  padding    : 1rem;
+}
+.project__text--label {
+  font-size: $font-size-md;
+  min-width: 8rem;
+  padding  : 0;
+}
+.project__text--label::first-letter {
+  font-size: $font-size-md-plus;
+}
+.project__text--description {
+  color    : $color-white;
+  font-size: $font-size-md;
+  padding  : 0;
+}
+.project__text__section {
+  align-items    : baseline;
+  border-top     : 1px solid $color-leather;
+  display        : flex;
+  justify-content: flex-start;
+}
+.project__thumbnail-container {
+  overflow: hidden;
+  height  : 12rem;
+  width   : 100%;
+}
+.project__thumbnail-container:after {
+  @include transition-default;
+  background-color: $color-white;
+  display         : block;
+  content         : "";
+  opacity         : 0;
+}
+.project__thumbnail-container__img {
+  @include transition-md;
+  background-color: $color-white;
+  border          : 1px solid $color-gray-lite;
+  box-shadow      : 1px 1px 3px #F5F5F5;
+  overflow        : hidden;
+  width           : 100%;
+}
+.project-detail {
+  background-color: $color-black;
+  border          : 15px solid $color-black;
+  box-shadow      : inset 0 0 0 3px $color-leather;
+  margin          : 3rem auto;
+  padding         : 2rem;
+  width           : 80%;
+}
+.project-detail__title {
+  // background   : linear-gradient(140deg, $color-black 90%, $color-leather 90%);
+  border-top   : 3px solid $color-leather;
+  color        : $color-leather;
+  font-size    : $font-size-md-plus;
+  margin-top   : 2rem;
+  overflow     : hidden;
+  padding      : 1rem 0.5rem;
+  text-overflow: ellipsis;
+  white-space  : nowrap;
+}
+.project:hover .project__img-container__img {
+  transform: scale(1.03);
+}
+@media screen and(min-width: 480px) {
+  .projects {}
+  .project {
+    width: calc(400px - 2rem);
+  }
+  .project__link--detail {
+    font-size: $font-size-md-plus;
+  }
+  .project__text--label {
+    fonts-size: $font-size-md-plus;
+  }
+  .project__text--label::first-letter {
+    font-size: $font-size-xl;
+  }
+  .project__text--description {
+    font-size: $font-size-md-plus;
+  }
+  .project-detail__title {
+    font-size: $font-size-xl;
+  }
+}
+// @media screen and (min-width: 480px) {
+//   .projects {
+//     display        : flex;
+//     flex-wrap      : wrap;
+//     justify-content: space-between;
+//   }
+//   .project {
+//     // flex: 1 1 auto;
+//     margin: 3rem 2rem;
+//     width : calc(50% - 4rem );
+//   }
+//   .project__link__thumbnail-container {
+//     height: auto;
+//   }
+// }
+// @media screen and (min-width: 768px) {
+//   .project {
+//     // flex: 1 1 auto;
+//     margin: 3rem 1rem;
+//     width : calc(25% - 2rem );
+//   }
+// }

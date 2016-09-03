@@ -9,12 +9,17 @@
   background-color: $color-black;
   display         : flex;
   flex-direction  : row;
+  left            : 0;
+  position        : fixed;
+  right           : 0;
+  z-index         : 99999;
 }
 .menu__btn {
   @include link-default;
   @include transition-color-default;
   background-color: transparent;
   border          : 1px solid $color-leather;
+  padding         : 0.5rem;
 }
 .menu__btn:hover {
   @include link-default-hover;
@@ -34,19 +39,6 @@
   width           : 10rem;
   transform       : translateY(20rem);
 }
-/* possible different logo design using ::after
-.menu__img-container:after {
-  content: "";
-  display: block;
-  border-radius: 50%;
-  height: 10rem;
-  left: calc(50% - 5rem);
-  position: absolute;
-  width: 10rem;
-  z-index: -2;
-  background: linear-gradient(90deg, rgba($color-green ,0.5) 50%, $color-rust 50% );
-}
-*/
 .menu__img-container__img {
   color         : $color-white;
   display       : inline-block;
@@ -58,14 +50,52 @@
   @include link-default;
   @include transition-color-default;
   font-size: $font-size-md;
+  padding  : 0 0.5rem;
+}
+.menu__link:link,
+.menu__link:visited {
+  @include link-default;
+  @include transition-color-default;
 }
 .menu__link:hover {
   @include link-default-hover;
+}
+.menu__link.active {
+  border: 1px solid $color-leather;
+  color : $color-white;
+}
+.menu__link__sub-menu,
+.menu__link__sub-menu:visited {
+  @include link-default;
+  @include transition-color-default;
+  display: block;
+  margin : 0;
+  padding: 1rem;
+}
+.menu__link__sub-menu:hover {
+  @include link-default-hover;
+  background-color: $color-leather;
+  color           : $color-black;
+}
+.menu__link__sub-menu.active {
+  // background-color: lighten($color-leather,40%);
+  border-bottom: 1px solid $color-white;
+  border-top   : 1px solid $color-white;
+  color        : $color-white;
 }
 .menu__link__icon {
   @include link-default;
   font-size: $font-size-md;
   // display  : none;
+}
+.menu__list {
+  background-color: $color-black;
+  border-top      : 1px solid $color-leather;
+  left            : 0;
+  margin          : 6.5rem 0 0;
+  position        : relative;
+  right           : 0;
+  z-index         : 9999;
 }
 .menu__section {
   display        : flex;

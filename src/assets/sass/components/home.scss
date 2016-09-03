@@ -8,7 +8,9 @@
 @import '../mixins/transition';
 @import '../animation/fade';
 .home {
+  margin : 7rem auto;
   padding: 1rem;
+  width  : 90%;
 }
 .home__title--fancy {
   background-color: $color-white;
@@ -17,6 +19,7 @@
 }
 .home__footer {
   background-color: $color-leather;
+  font-size       : $font-size-sm;
   margin          : 1rem -5rem;
   padding         : 1rem 2rem;
 }
@@ -25,7 +28,7 @@
   background-color: $color-leather;
   color           : $color-black;
   display         : inline-block;
-  font-size       : $font-size-xxl;
+  font-size       : $font-size-xl;
   padding         : 1rem;
   text-align      : center;
 }
@@ -33,7 +36,7 @@
   background-color: $color-black;
   color           : $color-leather;
   display         : inline-block;
-  font-size       : $font-size-xl;
+  font-size       : $font-size-md-plus;
   text-align      : right;
 }
 .home__title--xs {
@@ -44,3 +47,19 @@
   text-align      : right;
 }
 .home-row {}
+@media screen and (min-width: 480px) {
+  .home {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .home {
+    width: 50%;
+  }
+  .home__title {
+    font-size: $font-size-xxl;
+  }
+  .home__title--sm {
+    font-size: $font-size-xl;
+  }
+}

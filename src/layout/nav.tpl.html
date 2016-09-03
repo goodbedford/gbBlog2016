@@ -6,9 +6,9 @@
       </div>
       <div class="menu__section">
         <a class="menu__link" ui-sref-active="active" ui-sref="site.blog">Blog</a>
-        <a class="menu__link" ui-sref-active="active" ui-sref="site.projects">Projects</a>
+        <a class="menu__link" ui-sref-active="active" ui-sref="site.projects">Portfolio</a>
         <a class="menu__link" ui-sref-active="active" ui-sref="site.resume">Resume</a>
-        <a class="menu__link" ui-sref-active="active" ui-sref="site.community">Community</a>
+        <!-- <a class="menu__link" ui-sref-active="active" ui-sref="site.community">Community</a> -->
         <a class="menu__link" ui-sref-active="active" ui-sref="site.contact">Contact</a>
       </div>
       <div class="menu__section menu__section--right">
@@ -28,22 +28,21 @@
     <div class="col-xs-12">
       <div class="menu">
         <div class="menu__section menu__section--sm">
-          <a class="menu__link" ui-sref="home" class="brand-logo">Goodbedford</a>
+          <a class="menu__link" ui-sref-active="active" ui-sref="site.home" class="brand-logo">Goodbedford</a>
           <button class="menu__btn" ng-click="nav.isClosed = !nav.isClosed">Menu</button>
         </div>
       </div>
       <div class="row">
         <div class="col-xs-12" ng-hide="nav.isClosed">
-          <ul class="list-unstyled nav-bar">
+          <div class="menu__list">
             <!-- <li><a ui-sref="site.home" ng-click="nav.isClosed = !nav.isClosed">Goodbedford.com</a></li> -->
-            <li><a ui-sref="site.blog" ng-click="nav.isClosed = !nav.isClosed">Blog</a></li>
-            <li><a ui-sref="site.projects" ng-click="nav.isClosed = !nav.isClosed">Projects</a></li>
-            <li><a ui-sref="site.resume" ng-click="nav.isClosed = !nav.isClosed">Resume</a></li>
-            <li><a ui-sref="site.community" ng-click="nav.isClosed = !nav.isClosed">Community</a></li>
-            <li><a ng-href="https://www.linkedin.com/in/goodbedford" ng-click="nav.isClosed = !nav.isClosed">LinkedIn</a></li>
-            <li><a ng-href="https://github.com/goodbedford" ng-click="nav.isClosed = !nav.isClosed">Github</a></li>
-            <li><a ui-sref="site.contact" ng-click="nav.isClosed = !nav.isClosed">Contact</a></li>
-          </ul>
+            <a class="menu__link__sub-menu" ui-sref-active="active" ui-sref="site.blog" ng-click="nav.isClosed = !nav.isClosed">Blog</a>
+            <a class="menu__link__sub-menu" ui-sref-active="active" ui-sref="site.projects" ng-click="nav.isClosed = !nav.isClosed">Projects</a>
+            <a class="menu__link__sub-menu" ui-sref-active="active" ui-sref="site.resume" ng-click="nav.isClosed = !nav.isClosed">Resume</a>
+            <!-- <a class="menu__link__sub-menu" ui-sref-active="active" ng-href="https://www.linkedin.com/in/goodbedford" ng-click="nav.isClosed = !nav.isClosed">LinkedIn</a> -->
+            <!-- <a class="menu__link__sub-menu" ui-sref-active="active" ng-href="https://github.com/goodbedford" ng-click="nav.isClosed = !nav.isClosed">Github</a> -->
+            <a class="menu__link__sub-menu" ui-sref-active="active" ui-sref="site.contact" ng-click="nav.isClosed = !nav.isClosed">Contact</a>
+          </div>
         </div>
       </div>
     </div>

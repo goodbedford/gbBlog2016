@@ -1,24 +1,24 @@
-<div class="row animated fadeIn">
-  <div class="splash-panel">
-    <div class="col-xs-12">
-      <div class="blog-seperator row animated fadeInUp"></div>
-      <div class="row spacer-small-btm">
-        <div class="hidden-xs col-sm-3 col-sm-offset-2">
-          <div><img ng-src={{blogDetails.blog.img}} alt="{{blogDetails.blog.title}} logo" class="img-responsive" /></div>
+<div class="row ">
+  <div class="dots-pattern-sm-black"></div>
+  <div class="layout-content__header">
+    <div class="layout-content__title">Blog</div>
+  </div>
+  <div class="main-content">
+    <div class="blog-detail">
+      <figure class="blog-detail__section blog-detail__section--left">
+        <div class="blog-detail__img-container">
+          <img class="blog-detail__img-container__img" ng-src="{{blogDetails.blog.img}}" alt="{{blogDetails.blog.title}} logo">
         </div>
-        <div class="col-xs-12 col-sm-5">
-          <div>
-            <h3 class="bio-header">{{blogDetails.blog.title}}</h3>
-            <div><span>{{blogDetails.blog.date}}</span></div>
-            <p>{{blogDetails.blog.author}}</p>
+      </figure>
+      <div class="blog-detail__section blog-detail__section--right">
+        <div class="blog-detail__title">{{blogDetails.blog.title}}</div>
+        <div class- "blog-detail__date">{{blogDetails.blog.date}}</div>
+        <div class="blog-detail__text">{{blogDetails.blog.author}}</div>
 
-            <div>
-              <p class="bio-detail-2" ng-bind-html="blogDetails.blog.content.thanks"></p>
-              <p ng-bind-html="blogDetails.blog.content.body"></p>
-            </div>
-          </div>
+        <div>
+          <p class="blog-detail__text blog__detail__text--thanks" ng-bind-html="blogDetails.blog.content.thanks"></p>
+          <p ng-bind-html="blogDetails.blog.content.body"></p>
         </div>
-        <div class="col-sm-2"></div>
       </div>
     </div>
   </div>

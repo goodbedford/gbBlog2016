@@ -32,7 +32,7 @@
         "Manage version control with Git software."
       ],
       timePeriod: {
-        start: "2016-05",
+        start: "05-2016",
         end: "current"
       },
       supervisor: "Shaun Tai"
@@ -48,7 +48,7 @@
         "Foster General Assembly culture and team building to produce a vigorous working & learning environment."
       ],
       timePeriod: {
-        start: "2016-04",
+        start: "04-2016",
         end: "current"
       },
       supervisor: "Anya Vo"
@@ -65,8 +65,8 @@
         "Recruit & Interview applicants seeking to enroll in Web Development Immersive programs."
       ],
       timePeriod: {
-        start: "2015-09",
-        end: "2015-12"
+        start: "09-2015",
+        end: "12-2015"
       },
       supervisor: "Alexandra Pisano"
     }, {
@@ -82,8 +82,8 @@
         "Filed monthly and annual reports and budgets up to $200,000."
       ],
       timePeriod: {
-        start: "2007-08",
-        end: "2015-05"
+        start: "08-2007",
+        end: "05-2015"
       },
       supervisor: "N/A"
     }];
@@ -99,8 +99,8 @@
       major: "Advanced Web Application Development and Front End Engineering",
       degree: "Full Stack Web Developer Certificate",
       timePeriod: {
-        start: "2015-06",
-        end: "2015-09"
+        start: "06-2015",
+        end: "09-2015"
       },
     }, {
       school: "City College of San Francisco",
@@ -114,8 +114,8 @@
       major: "Computer Science",
       degree: "Web Site Development Techniques",
       timePeriod: {
-        start: "year-month",
-        end: "year-month"
+        start: "month-year",
+        end: "month-year"
       },
     }, {
       school: "Robert Morris University",
@@ -125,46 +125,94 @@
       major: "Management Information Systems",
       degree: "Associate Degree in Business Administration",
       timePeriod: {
-        start: "year-month",
-        end: "year-month"
+        start: "month-year",
+        end: "month-year"
       },
     }];
     factory.projects = [{
+      title: "Tic Tac Toe",
+      url: "https://goodbedford.github.io/tic/",
+      repo: "https://github.com/goodbedford/tic",
+      description: "I made a tic tac toe game in one day. I spent most of the time on the colors and animations.",
+      stack: "HTML5, CSS3, SASS, Javascript, RWD, NPM, Gulp",
+      role: "Front End Developer",
+      img: [
+        "src/assets/images/projects/tictac/mobile-min.png",
+        "src/assets/images/projects/tictac/rwd-tictac-min.png"
+      ],
+      date: "08-2016"
+    }, {
+      title: "Foodie",
+      url: "https://goodbedford.github.io/food/",
+      repo: "https://github.com/goodbedford/food",
+      description: "Responsive Food Blog demo project: inspired by http://foodsense.is/",
+      stack: "HTML, CSS, SASS, Javascript, Jquery, RWD, NPM, Gulp, Karma, Jasmine",
+      role: "Front End Developer",
+      img: [
+        "src/assets/images/projects/foodie/foodie-min.png",
+        "src/assets/images/projects/foodie/rwd-foodie-min.png"
+      ],
+      date: "08-2016"
+    }, {
+      title: "Profile Card",
+      url: "https://codepen.io/goodbedford/pen/ezzGXN",
+      repo: "https://codepen.io/goodbedford/pen/ezzGXN",
+      description: "Colorful Profile Card",
+      stack: "HTML5,CSS3, Javascript, SASS",
+      role: "Front End Developer",
+      img: [
+        "src/assets/images/projects/codepen/card2-bem-min.png",
+        "src/assets/images/projects/codepen/card2-bem-min.png"
+      ],
+      date: "06-2016"
+    }, {
       title: "Awwwards-clone",
       url: "https://goodbedford.github.io/awards/",
       repo: "https://github.com/goodbedford/awards",
-      description: "This site is an demo clone of http://www.awwwards.com/",
-      stack: "HTML5,CSS3, Javascript, SASS, Gulp",
+      description: "This site is an responsive demo clone of http://www.awwwards.com/",
+      stack: "HTML5,CSS3, Javascript, SASS, RWD, Gulp",
       role: "Front End Developer, I looked at Awwwards.com and made a clone of it. Pay attention to the responsive layout created with flexbox.",
-      img: "src/assets/images/projects/awards/main-page.png",
-      date: "2016-06"
+      img: [
+        "src/assets/images/projects/awards/main-page-min.png",
+        "src/assets/images/projects/awards/rwd-layout-min.png"
+      ],
+      date: "06-2016"
     }, {
       title: "BRIDGEGOOD.com",
-      url: "http://bridgegood.com/",
+      url: "https://bridgegood.com/",
       repo: "",
       description: "Responsive HTML5 app that connects early stage designers with professional opportunities.",
-      stack: "REST API, HTML, CSS, JavaScript, JSON, Angular 1.x, Rails, Heroku, PostgreSQL",
+      stack: "REST API, HTML, CSS, JavaScript, RWD, JSON, Angular 1.x, Rails, Heroku, PostgreSQL",
       role: "Front-End redesign of desktop and mobile layout",
-      img: "src/assets/images/projects/bridgegood/5-19-16-profile-screenshot.png",
-      date: "2016-05"
+      img: [
+        "src/assets/images/projects/bridgegood/rwd-bridgegood-min.png",
+        "src/assets/images/projects/bridgegood/bridgegood-screenshot-min.png"
+      ],
+      date: "05-2016"
     }, {
       title: "#OOTD (outfit of the day)",
       url: "https://ootd-app.herokuapp.com/#/",
       repo: "https://github.com/goodbedford/ootd2016",
       description: "Responsive Mobile First application designed to save outfits into a personal lookbook. Demonstrates proficient use of third-party APIs (Instagram) and effective code.NOTE:*Instagram has changed its API Policy so this Errors.",
-      stack: "REST API, HTML, CSS, JavaScript, JSON, Angular 1.x, Heroku, MongoDB(NoSql), Node & Express",
+      stack: "REST API, HTML, CSS, JavaScript, RWD, JSON, Angular 1.x, Heroku, MongoDB(NoSql), Node & Express",
       role: "Conceptualization, Front-End & Back-End Development",
-      img: "src/assets/images/projects/ootd2016/ootd2016-screenshot.png",
-      date: "2016-03"
+      img: [
+        "src/assets/images/projects/ootd2016/ootd2016-screenshot-min.png",
+        "src/assets/images/projects/ootd2016/ootd2016-screenshot-min.png"
+      ],
+      date: "03-2016"
     }, {
       title: "Goodbedford.com",
       url: "http://www.goodbedford.com/",
       repo: "https://github.com/goodbedford/gbBlog2016",
-      description: "Portfolio and Blog showcasing present and past projects.",
-      stack: "HTML5, CSS, Javascript, Jquery, Bootstrap, Sass, Karma, Grunt, Jasmine, NPM, Emmet, Sketch, Webstorm",
+      description: "Responsive Portfolio and Blog showcasing present and past projects.",
+      stack: "HTML5, CSS, Javascript, Jquery, Bootstrap, Sass, RWD, Karma, Grunt, Jasmine, NPM, Emmet, Sketch, Webstorm",
       role: "Conceptualization, Front-End & Back-End Development, Testing",
-      img: "src/assets/images/projects/gbBlog/projects-page.png",
-      date: "2016-02"
+      img: [
+        "src/assets/images/projects/gbBlog/projects-page-min.png",
+        "src/assets/images/projects/gbBlog/projects-page-min.png"
+      ],
+      date: "02-2016"
     }, {
       title: "Duplicate Finder",
       url: "http://duplicatefinder.bitballoon.com/",
@@ -172,8 +220,11 @@
       description: "Duplicate Finder is a small demonstration of finding matching strings in another string algorithm.",
       stack: "Angular, Material Design, UI Router, Bower, Emmet, Webstorm, BitBallon",
       role: "Conceptualization & Front-End Development",
-      img: "src/assets/images/projects/duplicateFinder/duplicate-finder.png",
-      date: "2016-01"
+      img: [
+        "src/assets/images/projects/duplicateFinder/duplicate-finder-min.png",
+        "src/assets/images/projects/duplicateFinder/duplicate-finder-min.png"
+      ],
+      date: "01-2016"
     }, {
       title: "Movie Rating Stars",
       url: "http://gb-movie-rating.bitballoon.com/",
@@ -181,8 +232,11 @@
       description: "UI demo of movie rating stars",
       stack: "HTML5, CSS, Javascript, Jquery, Grunt, NPM, Webstorm, Bitballon",
       role: "Conceptualization, Front-End Development",
-      img: "src/assets/images/projects/movieRatingStars/star-rating-screenshot.png",
-      date: "2016-01"
+      img: [
+        "src/assets/images/projects/movieRatingStars/star-rating-min.png",
+        "src/assets/images/projects/movieRatingStars/star-rating-min.png"
+      ],
+      date: "01-2016"
     }, {
       title: "atCon",
       url: "https://atcon.herokuapp.com/",
@@ -190,8 +244,11 @@
       description: "A Rich web application built for creating one-off events similar to Eventbrite.",
       stack: "REST API, HTML, CSS, JavaScript, JSON, Heroku, Ruby, Ruby on Rails, PostgreSQL, AWS S3",
       role: "Conceptualization, Git Management & Back-End Development(Routing & Modeling)",
-      img: "src/assets/images/projects/atcon/atCon-screenshot.jpg",
-      date: "2015-08"
+      img: [
+        "src/assets/images/projects/atcon/atCon-screenshot-min.jpg",
+        "src/assets/images/projects/atcon/atCon-screenshot-min.jpg"
+      ],
+      date: "08-2015"
     }, {
       title: "Enrollment Data Viz",
       url: "https://enrollment-data.herokuapp.com/",
@@ -199,8 +256,11 @@
       description: "A Data visualization projectSpec showcasing various chart types including animated line, bar, pie, donut and small multiples.",
       stack: "C3, D3, HTML, CSS, Javascript, Node, Express & Heroku",
       role: "Conceptualization, Front-End & Back-End Development",
-      img: "src/assets/images/projects/enrollment/enrollment-screenshot.jpg",
-      date: "2015-12"
+      img: [
+        "src/assets/images/projects/enrollment/Enrollment-linegraph-screenshot-min.png",
+        "src/assets/images/projects/enrollment/Enrollment-small-multiples2-min.png"
+      ],
+      date: "12-2015"
     }];
     factory.skills = {
       languages: "JavaScript, Ruby, HTML, CSS, Markdown",

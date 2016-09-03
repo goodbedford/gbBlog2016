@@ -1,0 +1,72 @@
+<div class="row">
+  <div class="" ng-repeat="project in project.bio.projects track by $index" ng-if="$index >= 3 && $index <6">
+    <!-- projectSpec -->
+    <div class="col-xs-12 col-sm-4 splash-panel animated fadeInUp">
+      <div class="row">
+        <div class="project-img-wrapper project-img-wrapper--sm text-center">
+          <a ui-sref="site.details({projectId: $index})" class="project-link">
+            <img ng-src={{project.img}} alt="{{project.title}} +logo image" class="img-medium">
+          </a>
+        </div>
+        <div class="project-title">{{project.title}}</div>
+      </div>
+      <div class="row">
+        <ul class="list-unstyled">
+          <li>{{project.description}}</li>
+          <li><span class="project-label">Site:</span></li>
+          <li><a ng-href="{{project.url}}" class="project-link">{{project.url}}</a></li>
+          <li><span class="project-label">Code:</span></li>
+          <li><a ng-href="{{project.repo}}" class="project-link">{{project.repo}}</a></li>
+          <li><span class="project-label">Stack:</span></li>
+          <li>{{project.stack}}</li>
+          <li><span class="project-label">Role:</span></li>
+          <li>{{project.role}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="" ng-repeat="project in project.bio.projects track by $index">
+    <!-- projectSpec -->
+    <div class="col-xs-12 col-sm-4 splash-panel" ng-if="$index >= 6 && $index < 9">
+      <div class="row">
+        <div class="project-img-wrapper project-img-wrapper--sm text-center">
+          <a ui-sref="site.details({projectId: $index})" class="project-link">
+            <img ng-src={{project.img}} alt="{{project.title}} +logo image" class="img-medium">
+          </a>
+        </div>
+        <div class="project-title">{{project.title}}</div>
+      </div>
+      <div class="row">
+        <ul class="list-unstyled">
+          <li>{{project.description}}</li>
+          <li><span class="project-label">Site:</span></li>
+          <li><a ng-href="{{project.url}}" class="project-link">{{project.url}}</a></li>
+          <li><span class="project-label">Code:</span></li>
+          <li><a ng-href="{{project.repo}}" class="project-link">{{project.repo}}</a></li>
+          <li><span class="project-label">Stack:</span></li>
+          <li>{{project.stack}}</li>
+          <li><span class="project-label">Role:</span></li>
+          <li>{{project.role}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- <div class="row">
+  <ul class="list-unstyled">
+    <li>{{project.description}}</li>
+    <li><span class="project-label">Site:</span></li>
+    <li><a ng-href="{{project.url}}" class="project-link">{{project.url}}</a></li>
+    <li><span class="project-label">Code:</span></li>
+    <li><a ng-href="{{project.repo}}" class="project-link">{{project.repo || "Private"}}</a></li>
+    <li><span class="project-label">Stack:</span></li>
+    <li>{{project.stack}}</li>
+    <li><span class="project-label">Role:</span></li>
+    <li>{{project.role}}</li>
+  </ul>
+</div> -->

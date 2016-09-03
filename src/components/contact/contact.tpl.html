@@ -1,13 +1,17 @@
-<div class="row animated fadeIn">
-    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-        <div class="splash-panel">
-            <h3>{{contact.bio.name}}</h3>
-            <p>Location: {{contact.bio.location}}</p>
-            <p>Email: <a ng-href="mailto:goodbedford@gmail.com?subject=Goodbeford Site Inquiry">{{contact.bio.email}}</a> </p>
-            <p><strong>Seeking Opportunities: </strong>{{contact.bio.occupation}} Positions</p>
-            <p><strong>Linkedin: </strong><a ng-href="https://www.linkedin.com/in/goodbedford">https://www.linkedin.com/in/goodbedford</a></p>
-            <p><strong>GitHub: </strong><a ng-href="https://github.com/goodbedford">https://github.com/goodbedford</a></p>
-            <p><strong>Codepen.io: </strong><a ng-href="http://codepen.io/goodbedford/">http://codepen.io/goodbedford/</a></p>
-        </div>
+<div class="row">
+  <div class="dots-pattern-sm-leather"></div>
+  <div class="layout-content__header">
+    <div class="layout-content__title">Contact</div>
+  </div>
+  <div class="main-content">
+    <div class="contact">
+      <div class="contact__title">{{contact.bio.name}}</div>
+      <p><strong>Location: </strong> {{contact.bio.location}}</p>
+      <p><strong>Email: </strong><a class="contact__link contact__link--http" ng-href="mailto:goodbedford@gmail.com?subject=Goodbeford Site Inquiry">{{contact.bio.email}}</a> </p>
+      <p><strong>Seeking Opportunities: </strong>{{contact.bio.occupation}} Positions</p>
+      <p><strong>Linkedin: </strong><a class="contact__link contact__link--http" ng-href="https://www.linkedin.com/in/goodbedford">https://www.linkedin.com/in/goodbedford</a></p>
+      <p><strong>GitHub: </strong><a class="contact__link contact__link--http" ng-href="https://github.com/goodbedford">https://github.com/goodbedford</a></p>
+      <p><strong>Codepen.io: </strong><a class="contact__link contact__link--http" ng-href="http://codepen.io/goodbedford/">http://codepen.io/goodbedford/</a></p>
     </div>
+  </div>
 </div>

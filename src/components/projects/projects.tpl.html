@@ -1,87 +1,20 @@
-<div class="animated fadeIn">
-  <div class="row bg">
-    <!--<div class="col-xs-12 col-sm-6 col-sm-offset-3">-->
-    <div class="" ng-repeat="project in project.bio.projects track by $index">
-      <!-- projectSpec -->
-      <div class="col-xs-12 col-sm-4 splash-panel animated fadeInUp" ng-if="$index < 3">
-        <div class="row">
-          <div class="project-img-wrapper project-img-wrapper--sm text-center">
-            <a ui-sref="site.details({projectId: $index})" class="project-link">
-              <img ng-src={{project.img}} alt="{{project.title}} +logo image" class="img-medium">
-            </a>
-          </div>
-          <div class="project-title">{{project.title}}</div>
-        </div>
-        <div class="row">
-          <ul class="list-unstyled">
-            <li>{{project.description}}</li>
-            <li><span class="project-label">Site:</span></li>
-            <li><a ng-href="{{project.url}}" class="project-link">{{project.url}}</a></li>
-            <li><span class="project-label">Code:</span></li>
-            <li><a ng-href="{{project.repo}}" class="project-link">{{project.repo || "Private"}}</a></li>
-            <li><span class="project-label">Stack:</span></li>
-            <li>{{project.stack}}</li>
-            <li><span class="project-label">Role:</span></li>
-            <li>{{project.role}}</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <!--</div>-->
+<div class="row">
+  <div class="dots-pattern-sm-black"></div>
+  <div class="layout-content__header">
+    <div class="layout-content__title">Portfolio</div>
   </div>
-  <div class="row">
-    <div class="" ng-repeat="project in project.bio.projects track by $index" ng-if="$index >= 3 && $index <6">
+  <div class="main-content">
+    <div class="projects">
       <!-- projectSpec -->
-      <div class="col-xs-12 col-sm-4 splash-panel animated fadeInUp">
-        <div class="row">
-          <div class="project-img-wrapper project-img-wrapper--sm text-center">
-            <a ui-sref="site.details({projectId: $index})" class="project-link">
-              <img ng-src={{project.img}} alt="{{project.title}} +logo image" class="img-medium">
-            </a>
+      <div class="project" ng-repeat="project in project.bio.projects track by $index">
+        <a ui-sref="site.details({projectId: $index})" class="project__link">
+          <figure class="project__img-container">
+            <img ng-src={{project.img[0]}} alt="{{project.title}} +logo image" class="project__img-container__img">
+          </figure>
+          <div class="project__title">{{project.title}}
+            <span class="project__text">{{project.date}}</span>
           </div>
-          <div class="project-title">{{project.title}}</div>
-        </div>
-        <div class="row">
-          <ul class="list-unstyled">
-            <li>{{project.description}}</li>
-            <li><span class="project-label">Site:</span></li>
-            <li><a ng-href="{{project.url}}" class="project-link">{{project.url}}</a></li>
-            <li><span class="project-label">Code:</span></li>
-            <li><a ng-href="{{project.repo}}" class="project-link">{{project.repo}}</a></li>
-            <li><span class="project-label">Stack:</span></li>
-            <li>{{project.stack}}</li>
-            <li><span class="project-label">Role:</span></li>
-            <li>{{project.role}}</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="" ng-repeat="project in project.bio.projects track by $index">
-      <!-- projectSpec -->
-      <div class="col-xs-12 col-sm-4 splash-panel" ng-if="$index >= 6 && $index < 9">
-        <div class="row">
-          <div class="project-img-wrapper project-img-wrapper--sm text-center">
-            <a ui-sref="site.details({projectId: $index})" class="project-link">
-              <img ng-src={{project.img}} alt="{{project.title}} +logo image" class="img-medium">
-            </a>
-          </div>
-          <div class="project-title">{{project.title}}</div>
-        </div>
-        <div class="row">
-          <ul class="list-unstyled">
-            <li>{{project.description}}</li>
-            <li><span class="project-label">Site:</span></li>
-            <li><a ng-href="{{project.url}}" class="project-link">{{project.url}}</a></li>
-            <li><span class="project-label">Code:</span></li>
-            <li><a ng-href="{{project.repo}}" class="project-link">{{project.repo}}</a></li>
-            <li><span class="project-label">Stack:</span></li>
-            <li>{{project.stack}}</li>
-            <li><span class="project-label">Role:</span></li>
-            <li>{{project.role}}</li>
-          </ul>
-        </div>
+        </a>
       </div>
     </div>
   </div>

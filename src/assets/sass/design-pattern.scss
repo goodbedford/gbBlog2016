@@ -8,8 +8,9 @@
   background-size    : 10px 10px;
   background-position: 0 0, 30px 30px;
   height             : 100%;
-  width              : 120%;
+  width              : 100%;
   position           : absolute;
+  z-index            : -10;
 }
 .dots-pattern-sm-leather:before {
   // background: rgba($color-white, 0.5);
@@ -33,8 +34,25 @@
   animation-timing-function: ease-in-out;
 }
 .dots-pattern-sm-black {
+  background-color   : $color-white;
+  background-image   : radial-gradient($color-black 15%, transparent 16%), radial-gradient($color-black 15%, transparent 16%);
+  background-size    : 20px 20px;
+  background-position: 0 0, 30px 30px;
+  height             : 100%;
+  width              : 100%;
+  position           : absolute;
+  z-index            : -1;
+}
+.dots-pattern-sm-white {
   background-color   : $color-black;
   background-image   : radial-gradient($color-white 15%, transparent 16%), radial-gradient($color-white 15%, transparent 16%);
   background-size    : 20px 20px;
   background-position: 0 0, 30px 30px;
+  height             : 100%;
+  width              : 100%;
+}
+.checkers-pattern-md-black {
+  background-color: white;
+  background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(-45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
+  background-size : 100px 100px;
 }

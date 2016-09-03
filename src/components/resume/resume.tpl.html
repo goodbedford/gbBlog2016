@@ -1,115 +1,139 @@
 <div class="row ">
-  <!--<div class="hidden-xs col-sm-2">-->
-  <!--<img ng-src={{resume.bio.img[0]}} alt="gb logo"/>-->
-  <!--</div>-->
-  <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-    <div class="splash-panel">
-      <h3 class="">{{resume.bio.name}}</h3>
-      <p><span class="tag-line">"{{resume.bio.tagLine}}"</span></p>
-      <p><strong>Seeking Opportunities: </strong>For {{resume.bio.occupation}} Positions</p>
-    </div>
-    <div class="animated fadeIn">
-      <h3 class="bio-header">Skills</h3>
-      <p>
-        <span class="bio-label">Languages: </span>
-        <span class="bio-detail">{{resume.bio.skills.languages}}</span>
-      </p>
-      <p>
-        <span class="bio-label">Frameworks: </span>
-        <span class="bio-detail">{{resume.bio.skills.frameworks}}</span>
-      </p>
-      <p>
-        <span class="bio-label">Libraries: </span>
-        <span class="bio-detail">{{resume.bio.skills.libraries}}</span>
-      </p>
-      <p>
-        <span class="bio-label">Databases: </span>
-        <span class="bio-detail">{{resume.bio.skills.database}}</span>
-      </p>
-      <p>
-        <span class="bio-label">Technologies: </span>
-        <span class="bio-detail">{{resume.bio.skills.technologies}}</span>
-      </p>
-      <p>
-        <span class="bio-label">Personal: </span>
-        <span class="bio-detail">{{resume.bio.skills.personal}}</span>
-      </p>
-      <h3 class="bio-header">Work Experience</h3>
-      <div ng-repeat="job in resume.bio.workExperience">
-        <div ng-class="resume.placeCssHeader($index, resume.bio.workExperience,'info-panel')">
-          <p>
-            <span class="bio-label">Company: </span>
-            <a ng-href="{{job.url}}"><span class="bio-detail">{{job.company}}</span></a>
-          </p>
-          <p>
-            <span class="bio-label">Title: </span>
-            <span class="bio-detail">{{job.title}}</span>
-          </p>
-          <p>
-            <span class="bio-label">Description:</span>
-          </p>
-          <ul ng-repeat="desc in job.description">
-            <li>
-              <span class="bio-detail">{{desc}}</span>
-            </li>
-          </ul>
-          <p>
-            <span class="bio-label">Start: </span>
-            <span class="bio-detail">{{job.timePeriod.start}}</span> -
-            <span class="bio-label">End: </span>
-            <span class="bio-detail">{{job.timePeriod.end}}</span>
-          </p>
-        </div>
+  <div class="dots-pattern-sm-black"></div>
+  <div class="layout-content__header">
+    <div class="layout-content__title">Resume</div>
+  </div>
+  <div class="main-content">
+    <!-- <div class="resume__section resume__section--spread">
+      <a ng-href="http://www.goodbedford.com/#/site/resume#skills" class="resume__link">Skills</a>
+      <a ng-href="http://www.goodbedford.com/#/site/#work" class="resume__link">Work Experience</a>
+      <a ng-href="http://www.goodbedford.com/#/site/#portfolio" class="resume__link">Portfolio</a>
+      <a ng-href="http://www.goodbedford.com/#/site/#schools" class="resume__link">School</a>
+    </div> -->
+    <div class="resume">
+      <div class="resume__section resume__section--spread">
+        <a ng-href="http://www.goodbedford.com/#/site/resume#skills" class="resume__link">Skills</a>
+        <a ng-href="http://www.goodbedford.com/#/site/#work" class="resume__link">Work Experience</a>
+        <a ng-href="http://www.goodbedford.com/#/site/#portfolio" class="resume__link">Portfolio</a>
+        <a ng-href="http://www.goodbedford.com/#/site/#schools" class="resume__link">School</a>
       </div>
-      <h3 class="bio-header">Projects</h3>
-      <div ng-repeat="project in resume.bio.projects">
-        <div ng-class="resume.placeCssHeader($index, resume.bio.projects,'info-panel')">
-          <p>
-            <span class="bio-label">Title: </span>
-            <a ng-href="{{project.url}}"><span class="bio-detail">{{project.title}}</span></a>
-          </p>
-          <p>
-            <span class="bio-label">Repo: </span>
-            <a ng-href="{{project.repo}}">{{project.repo || "Private"}}</a>
-          </p>
-          <p>
-            <span class="bio-label">Description: </span>
-            <span class="bio-detail">{{project.description}}</span>
-          </p>
-          <p>
-            <span class="bio-label">Stack: </span>
-            <span class="bio-detail">{{project.stack}}</span>
-          </p>
-          <p>
-            <span class="bio-label">Role: </span>
-            <span class="bio-detail">{{project.role}}</span>
-          </p>
-          <p>
-            <span class="bio-label">Date: </span>
-            <span class="bio-detail">{{project.date}}</span>
-          </p>
-        </div>
+      <div class="resume__title resume__title--middle">{{resume.bio.name}}</div>
+      <div class="resume__tag-line">"{{resume.bio.tagLine}}"</div>
+      <div class="resume__section">
+        <div class="resume__label">Seeking Opportunities:</div>
+        <div class="resume__text"> For {{resume.bio.occupation}} Positions</div>
       </div>
-      <h3 class="bio-header">Education</h3>
-      <div ng-repeat="ed in resume.bio.education track by $index">
-        <div ng-class="resume.placeCssHeader($index, resume.bio.education,'info-panel')">
-          <p><span class="bio-label">School: </span>
-            <span class="bio-detail">{{ed.school}}</span>
-            <a ng-href="{{ed.url}}">{{ed.url}}</a>
-          </p>
-          <ul ng-repeat="desc in ed.description">
-            <li>
-              <span class="bio-detail">{{desc}}</span>
-            </li>
-          </ul>
-          <p>
-            <span class="bio-label">Major: </span>
-            <span class="bio-detail">{{ed.major}}</span>
-          </p>
-          <p>
-            <span class="bio-label">Degree: </span>
-            <span class="bio-detail">{{ed.degree}}</span>
-          </p>
+      <div class="animated fadeIn">
+        <div id="skills" class="resume__title resume__title--header">Skills</div>
+        <div class="resume__section">
+          <div class="resume__label">Languages: </div>
+          <div class="resume__text">{{resume.bio.skills.languages}}</div>
+        </div>
+        <div class="resume__section">
+          <div class="resume__label">Frameworks: </div>
+          <div class="resume__text">{{resume.bio.skills.frameworks}}</div>
+        </div>
+        <div class="resume__section">
+          <div class="resume__label">Libraries: </div>
+          <div class="resume__text">{{resume.bio.skills.libraries}}</div>
+        </div>
+        <div class="resume__section">
+          <div class="resume__label">Databases: </div>
+          <div class="resume__text">{{resume.bio.skills.database}}</div>
+        </div>
+        <div class="resume__section">
+          <div class="resume__label">Technologies: </div>
+          <div class="resume__text">{{resume.bio.skills.technologies}}</div>
+        </div>
+        <div class="resume__section">
+          <div class="resume__label">Personal: </div>
+          <div class="resume__text">{{resume.bio.skills.personal}}</div>
+        </div>
+        <div id="work" class="resume__title resume__title--header">Work Experience</div>
+        <div class="resume__job" ng-repeat="job in resume.bio.workExperience">
+          <div ng-class="resume.placeCssHeader($index, resume.bio.workExperience,'resume__divider')">
+            <div class="resume__section">
+              <div class="resume__label">Company: </div>
+              <a ng-href="{{job.url}}" class="resume__link resume__link--flex">{{job.company}}</a>
+            </div>
+            <div class="resume__section">
+              <div class="resume__label">Title: </div>
+              <div class="resume__text">{{job.title}}</div>
+            </div>
+            <div class="resume__section">
+              <div class="resume__label">Description:</div>
+              <ul class="resume__list">
+                <li ng-repeat="desc in job.description">
+                  <div class="resume__text">{{desc}}</div>
+                </li>
+              </ul>
+            </div>
+            <div class="">
+              <span class="resume__label">Start: </span>
+              <span class="resume__text">{{job.timePeriod.start}}</span>
+              <span class="resume__label">End: </span>
+              <span class="resume__text">{{job.timePeriod.end}}</span>
+            </div>
+          </div>
+        </div>
+        <div class="resume__title resume__title--header">Portfolio</div>
+        <div class="resume__portfolio " ng-repeat="project in resume.bio.projects">
+          <div ng-class="resume.placeCssHeader($index, resume.bio.projects,'resume__divider')">
+            <div class="resume__section">
+              <div class="resume__label">Title: </div>
+              <a class="resume__link resume__link--flex" ng-href="{{project.url}}">{{project.title}}</a>
+            </div>
+            <div class="resume__section">
+              <div class="resume__label">Repo: </div>
+              <a class="resume__link resume__link--flex resume__link--http" ng-href="{{project.repo}}">{{project.repo || "Private"}}</a>
+            </div>
+            <div class="resume__section">
+              <div class="resume__label">Description: </div>
+              <div class="resume__text">{{project.description}}</div>
+            </div>
+
+            <div class="resume__section">
+              <div class="resume__label">Stack: </div>
+              <div class="resume__text">{{project.stack}}</div>
+            </div>
+
+
+            <div class="resume__section">
+              <div class="resume__label">Role: </div>
+              <div class="resume__text">{{project.role}}</div>
+            </div>
+
+            <div class="resume__section">
+              <div class="resume__label">Date: </div>
+              <div class="resume__text">{{project.date}}</div>
+            </div>
+          </div>
+        </div>
+        <div class="resume__title resume__title--header">Education</div>
+
+        <div class="resume__education" ng-repeat="ed in resume.bio.education track by $index">
+          <div ng-class="resume.placeCssHeader($index, resume.bio.education,'resume__divider')">
+            <div class="resume__section">
+              <div class="resume__label">School: </div>
+              <div class="resume__section resume__section--flex-column">
+                <span class="resume__text">{{ed.school}}</span>
+                <a class="resume__link resume__link--flex resume__link--http" ng-href="{{ed.url}}">{{ed.url}}</a>
+                <ul class="resume__list" ng-repeat="desc in ed.description">
+                  <li>
+                    <span class="resume__text">{{desc}}</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="resume__section">
+              <div class="resume__label">Major: </div>
+              <div class="resume__text">{{ed.major}}</div>
+            </div>
+            <div class="resume__section">
+              <div class="resume__label">Degree: </div>
+              <div class="resume__text">{{ed.degree}}</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

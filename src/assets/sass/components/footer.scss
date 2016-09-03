@@ -5,25 +5,45 @@
 @import '../fonts';
 @import '../mixins/link';
 @import '../mixins/transition';
-
-
-
 .footer {
-  align-items: flex-start;
-  border-top: 1px solid $color-gray-lite;
-  color: $color-gray;
-  display: flex;
-  font-size: $font-size-xs;
-  justify-content: space-between;
-  padding: 2rem 1rem;
+  background-color: $color-black;
+  border-top      : 1px solid $color-black;
+  font-size       : $font-size-xs;
+  padding         : 4rem 1rem;
 }
-.footer__icon {
-  @include transition-color-default;
-  font-size: $font-size-lg;
-  margin: 0 0.5rem;
+.footer__logo {
+  align-items    : center;
+  background     : white;
+  border         : 3px solid $color-leather;
+  border-radius  : 50%;
+  display        : flex;
+  height         : 100px;
+  justify-content: center;
+  margin         : 1rem;
+  overflow       : hidden;
+  padding        : 1rem;
+  width          : 100px;
 }
-.footer__icon:hover {
-  color: $color-black;
+.footer__logo:hover {
+  // transform: translate(0,-1rem);
+  background-color: $color-black;
+  color           : $color-white;
+}
+.footer__logo:hover .footer__text {
+  display: block;
+}
+.footer__logo:hover .footer__logo__img-container {
+  width: 100%;
+}
+.footer__logo:hover .footer__logo__img-container__img {
+  display: none;
+}
+.footer__logo__img-container {
+  @include transition-default;
+  width: 50px;
+}
+.footer__logo__img-container__img {
+  width: 100%;
 }
 .footer__link {
   @include link-default;
@@ -33,12 +53,22 @@
   @include link-default-hover;
 }
 .footer__section {
-  flex: 1 1 auto;
+  align-items    : flex-start;
+  display        : flex;
+  flex-wrap      : wrap;
+  font-size      : $font-size-xs;
+  justify-content: space-between;
 }
 .footer__text {
-
+  display   : none;
+  font-size : $font-size-md;
+  text-align: center;
 }
-
-@media screen and (min-width: 480px) {
-
+.footer__title {
+  color     : $color-white;
+  font-size : $font-size-md-plus;
+  margin    : 1rem;
+  padding   : 1rem;
+  text-align: center;
 }
+@media screen and (min-width: 480px) {}

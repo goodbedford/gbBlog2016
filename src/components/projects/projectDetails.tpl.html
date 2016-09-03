@@ -1,26 +1,40 @@
 <div class="row bg">
-    <!-- projectSpec -->
-    <div class="col-xs-12 col-sm-6 col-sm-offset-3 splash-panel animated fadeInUp">
-      <div class="row">
-        <div class="project-img-wrapper text-center">
-          <a ng-href="{{projectDetails.project.url}}" class="project-link">
-            <img ng-src={{projectDetails.project.img}} alt="{{projectDetails.project.title}} +logo image" class="img-full">
-          </a>
-        </div>
-        <div class="project-title">{{projectDetails.project.title}}</div>
+  <div class="dots-pattern-sm-black"></div>
+  <div class="layout-content__header">
+    <div class="layout-content__title">Portfolio</div>
+  </div>
+  <!-- projectSpec -->
+  <!-- <div class="col-xs-12 col-sm-6 col-sm-offset-3 splash-panel animated fadeInUp"> -->
+  <div class="main-content">
+    <div class="project-detail">
+      <a ng-href="{{projectDetails.project.url}}" class="project__link project__link--plain">
+        <figure class="project__img-container project__img-container--full">
+          <img ng-src={{projectDetails.project.img[1]}} alt="{{projectDetails.project.title}} +logo image" class="project__img-container__img">
+        </figure>
+      </a>
+      <div class="project-detail__title">{{projectDetails.project.title}}
+        <span class="project__text">{{projectDetails.project.date}}</span>
       </div>
-      <div class="row">
-        <ul class="list-unstyled">
-          <li>{{projectDetails.project.description}}</li>
-          <li><span class="project-label">Site:</span></li>
-          <li><a ng-href="{{projectDetails.project.url}}" class="project-link">{{projectDetails.project.url}}</a></li>
-          <li><span class="project-label">Code:</span></li>
-          <li><a ng-href="{{projectDetails.project.repo}}" class="project-link">{{projectDetails.project.repo || "Private"}}</a></li>
-          <li><span class="project-label">Stack:</span></li>
-          <li>{{projectDetails.project.stack}}</li>
-          <li><span class="project-label">Role:</span></li>
-          <li>{{projectDetails.project.role}}</li>
-        </ul>
+      <div class="project__text project__text--description">{{projectDetails.project.description}}</div>
+      <br>
+      <div class="project__text__section">
+        <span class="project__text project__text--label">Site</span>
+        <a ng-href="{{projectDetails.project.url}}" class="project__link project__link--detail">{{projectDetails.project.url}}</a>
+      </div>
+      <div class="project__text__section">
+        <span class="project__text project__text--label">Code</span>
+        <a ng-href="{{projectDetails.project.repo}}" class="project__link project__link--detail">{{projectDetails.project.repo || "Private"}}</a>
+      </div>
+      <div class="project__text__section">
+        <span class="project__text project__text--label">Stack</span>
+        <span class="project__text project__text--description">{{projectDetails.project.stack}}</span>
+      </div>
+      <div class="project__text__section">
+        <span class="project__text project__text--label">Role</span>
+        <span class="project__text project__text--description">{{projectDetails.project.role}}</span>
       </div>
     </div>
+  </div>
+</div>
+<!-- </div> -->
 </div>

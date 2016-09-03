@@ -1,21 +1,22 @@
-<div class="row animated fadeIn">
-  <div class="dots-pattern-sm-leather"></div>
+<div class="row">
+  <div class="dots-pattern-sm-black"></div>
+  <div class="layout-content__header">
+    <div class="layout-content__title">Blog</div>
+  </div>
   <div class="main-content">
     <div ng-repeat="blog in blog.blogs">
-      <div class="col-xs-12">
-        <div class="row blogs">
-          <a class="blog blog--link" ui-sref="site.blogDetails({blogId: $index})">
-            <!-- <figure class="blog__section blog__section--left">
-              <div class="blog__img-container">
-                <img class="blog__img-container__img" ng-src="{{blog.img}}" alt="{{blog.title}} logo">
-              </div>
-            </figure> -->
-            <div class="blog__section blog__section--right">
-              <h3 class="blog__title">{{blog.title}}</h3>
-              <div class="blog__date">{{blog.date}}</div>
+      <div class="row blogs">
+        <a class="blog blog--link" ui-sref="site.blogDetails({blogId: $index})">
+          <figure class="blog__section blog__section--left">
+            <div class="blog__img-container">
+              <img class="blog__img-container__img" ng-src="{{blog.img}}" alt="{{blog.title}} logo">
             </div>
-          </a>
-        </div>
+          </figure>
+          <div class="blog__section blog__section--right">
+            <h3 class="blog__title">{{blog.title}}</h3>
+            <div class="blog__date">{{blog.date}}</div>
+          </div>
+        </a>
       </div>
     </div>
   </div>
