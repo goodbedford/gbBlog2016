@@ -18,7 +18,8 @@
 .project {
   margin  : 3rem 1rem;
   position: relative;
-  width   : 300px;
+  // width   : 300px;
+  width   : 90%;
 }
 .project:after {
   @include box-shadow-03;

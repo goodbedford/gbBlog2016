@@ -9,6 +9,7 @@
   outline        : 0;
   text-transform : capitalize;
   text-decoration: none;
+  word-break     : break-all;
 }
 @mixin link-default-hover {
   color          : $color-white;
