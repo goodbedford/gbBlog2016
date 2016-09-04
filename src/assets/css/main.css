@@ -157,7 +157,7 @@ p {
   background-size: 10px 10px;
   background-position: 0 0, 30px 30px;
   height: 100%;
-  width: 100%;
+  width: 120vw;
   position: absolute;
   z-index: -10; }
 
@@ -186,7 +186,7 @@ p {
   background-size: 20px 20px;
   background-position: 0 0, 30px 30px;
   height: 100%;
-  width: 100%;
+  width: 120vw;
   position: absolute;
   z-index: -1; }
 
@@ -196,7 +196,7 @@ p {
   background-size: 20px 20px;
   background-position: 0 0, 30px 30px;
   height: 100%;
-  width: 100%; }
+  width: 120vw; }
 
 .checkers-pattern-md-black {
   background-color: white;
@@ -220,22 +220,10 @@ p {
 
 .layout-content {
   min-width: 300px;
+  max-width: 100vw;
   position: relative;
+  overflow-x: hidden;
   width: auto; }
-
-.layout-content:after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  border-top: 25px solid #967d5a;
-  bottom: -25px;
-  left: 50%;
-  z-index: 5;
-  transform: translate(-50%, 0%); }
 
 .layout-content__header {
   margin: 10rem auto 2rem;
@@ -245,6 +233,7 @@ p {
 .layout-content__title {
   background-color: #0a0a0a;
   border: 5px solid black;
+  border-radius: 5px;
   box-shadow: inset 0 0 0 3px #967d5a;
   color: white;
   display: inline-block;
@@ -253,7 +242,7 @@ p {
   width: 50%; }
 
 .main-content {
-  margin: 0 auto;
+  margin: 0 auto 5rem;
   min-height: 70vh;
   padding: 1rem 0;
   position: relative; }
@@ -567,10 +556,10 @@ p {
   width: 90%; }
 
 .blog:after {
-  background: rgba(10, 10, 10, 0.5);
+  background: rgba(10, 10, 10, 0.7);
   border-radius: 5px;
   bottom: -15px;
-  box-shadow: 0 10px 3px rgba(10, 10, 10, 0.5);
+  box-shadow: 0 10px 4px rgba(10, 10, 10, 0.5);
   content: '';
   left: -15px;
   position: absolute;
@@ -853,6 +842,7 @@ p {
 .contact {
   background-color: white;
   border: 15px solid white;
+  border-radius: 5px;
   box-shadow: inset 0 0 0 3px #967d5a;
   font-size: 1.2rem;
   margin: 0 auto 2rem;
@@ -1072,7 +1062,22 @@ p {
   background-color: #0a0a0a;
   border-top: 1px solid #0a0a0a;
   font-size: 1rem;
-  padding: 4rem 1rem; }
+  padding: 4rem 1rem;
+  position: relative; }
+
+.footer:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-bottom: 70px solid black;
+  top: -35px;
+  left: 50%;
+  z-index: 5;
+  transform: translate(-50%, 0%); }
 
 .footer__logo {
   align-items: center;
@@ -1432,13 +1437,27 @@ p {
 
 .project {
   margin: 3rem 1rem;
+  position: relative;
   width: 300px; }
+
+.project:after {
+  background: rgba(10, 10, 10, 0.5);
+  border-radius: 5px;
+  bottom: -1px;
+  box-shadow: 0 6px 3px rgba(10, 10, 10, 0.5);
+  content: '';
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1; }
 
 .project__date {
   color: #AAAAAA;
   font-size: 1.6rem; }
 
-.project__link {
+.project__link,
+.project__link:visited {
   color: inherit;
   text-decoration: none;
   transition: 0.2s color;
@@ -1466,6 +1485,7 @@ p {
 
 .project__img-container {
   border: 3px solid #0a0a0a;
+  border-radius: 5px;
   display: block;
   height: 180px;
   overflow: hidden;
@@ -1482,9 +1502,12 @@ p {
 
 .project__title {
   background: linear-gradient(140deg, #0a0a0a 90%, #967d5a 90%);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   color: #967d5a;
   font-size: 2rem;
   overflow: hidden;
+  margin-top: -0.3rem;
   padding: 1rem 0.5rem;
   text-overflow: ellipsis;
   white-space: nowrap; }
@@ -1538,6 +1561,7 @@ p {
 .project-detail {
   background-color: #0a0a0a;
   border: 15px solid #0a0a0a;
+  border-radius: 5px;
   box-shadow: inset 0 0 0 3px #967d5a;
   margin: 3rem auto;
   padding: 2rem;
@@ -1678,7 +1702,7 @@ p {
   background-size: 10px 10px;
   background-position: 0 0, 30px 30px;
   height: 100%;
-  width: 100%;
+  width: 120vw;
   position: absolute;
   z-index: -10; }
 
@@ -1707,7 +1731,7 @@ p {
   background-size: 20px 20px;
   background-position: 0 0, 30px 30px;
   height: 100%;
-  width: 100%;
+  width: 120vw;
   position: absolute;
   z-index: -1; }
 
@@ -1717,7 +1741,7 @@ p {
   background-size: 20px 20px;
   background-position: 0 0, 30px 30px;
   height: 100%;
-  width: 100%; }
+  width: 120vw; }
 
 .checkers-pattern-md-black {
   background-color: white;
@@ -1727,6 +1751,7 @@ p {
 .resume {
   background-color: white;
   border: 15px solid white;
+  border-radius: 5px;
   box-shadow: inset 0 0 0 3px #967d5a;
   margin: 0 auto 2rem;
   padding: 3rem;

@@ -19,16 +19,18 @@
   right        : -15px;
   top          : -15px;
   z-index      : -1;
-  //
-  // bottom    : 0;
-  // box-shadow: 0 7px 7px 1px rgba($color-black, 0.5);
-  // content   : "";
-  // left      : 0;
-  // position  : absolute;
-  // right     : 0;
-  // top       : 0;
-  // // transform: scale(1.049, 1.10);
-  // z-index   : -1;
+}
+@mixin box-shadow-03 {
+  background   : rgba($color-black, 0.5);
+  border-radius: 5px;
+  bottom       : -1px;
+  box-shadow   : 0 6px 3px rgba($color-black, 0.5);
+  content      : '';
+  left         : 0;
+  position     : absolute;
+  right        : 0;
+  top          : 0;
+  z-index      : -1;
 }
 @mixin drop-shadow-01 {
   box-shadow: 2px 2px 0 2px $color-black;

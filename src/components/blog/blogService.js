@@ -153,7 +153,7 @@
             "saw someone who answered the online group video conference " +
             "question. Peace, I gotta go put in work. "
         },
-        img: "src/assets/images/blog-images/2015-01-29/computer02.svg"
+        img: "src/assets/images/blog-images/2015-01-29/computer-03.svg"
       }];
     }
     factory.getDetails = getDetails;

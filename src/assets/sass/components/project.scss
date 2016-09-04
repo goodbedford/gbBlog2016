@@ -3,6 +3,7 @@
 //
 @import '../colors';
 @import '../fonts';
+@import '../mixins/backgrounds';
 @import '../mixins/link';
 @import '../mixins/transition';
 .projects {
@@ -15,8 +16,12 @@
   overflow       : hidden;
 }
 .project {
-  margin: 3rem 1rem;
-  width : 300px;
+  margin  : 3rem 1rem;
+  position: relative;
+  width   : 300px;
+}
+.project:after {
+  @include box-shadow-03;
 }
 // .project:hover {
 //   transform: translateY(-5px);
@@ -25,7 +30,8 @@
   color    : $color-gray;
   font-size: $font-size-md;
 }
-.project__link {
+.project__link,
+.project__link:visited {
   @include link-plain;
   @include transition-color-default;
   color: $color-leather;
@@ -49,11 +55,12 @@
   color: $color-leather;
 }
 .project__img-container {
-  border  : 3px solid $color-black;
-  display : block;
-  height  : 180px;
-  overflow: hidden;
-  position: relative;
+  border       : 3px solid $color-black;
+  border-radius: 5px;
+  display      : block;
+  height       : 180px;
+  overflow     : hidden;
+  position     : relative;
 }
 .project__img-container--full {
   height: auto;
@@ -64,13 +71,16 @@
   width           : 100%;
 }
 .project__title {
-  background   : linear-gradient(140deg, $color-black 90%, $color-leather 90%);
-  color        : $color-leather;
-  font-size    : $font-size-md-plus;
-  overflow     : hidden;
-  padding      : 1rem 0.5rem;
-  text-overflow: ellipsis;
-  white-space  : nowrap;
+  background                : linear-gradient(140deg, $color-black 90%, $color-leather 90%);
+  border-bottom-left-radius : 5px;
+  border-bottom-right-radius: 5px;
+  color                     : $color-leather;
+  font-size                 : $font-size-md-plus;
+  overflow                  : hidden;
+  margin-top                : -0.3rem;
+  padding                   : 1rem 0.5rem;
+  text-overflow             : ellipsis;
+  white-space               : nowrap;
 }
 .project__text {
   color      : $color-leather;
@@ -120,6 +130,7 @@
 .project-detail {
   background-color: $color-black;
   border          : 15px solid $color-black;
+  border-radius   : 5px;
   box-shadow      : inset 0 0 0 3px $color-leather;
   margin          : 3rem auto;
   padding         : 2rem;

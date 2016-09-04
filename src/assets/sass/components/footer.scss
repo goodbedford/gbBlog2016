@@ -10,6 +10,24 @@
   border-top      : 1px solid $color-black;
   font-size       : $font-size-xs;
   padding         : 4rem 1rem;
+  position        : relative;
+}
+.footer:after {
+  content      : "";
+  display      : block;
+  position     : absolute;
+  width        : 0;
+  height       : 0;
+  border-left  : 70px solid transparent;
+  border-right : 70px solid transparent;
+  border-bottom: 70px solid black;
+  // border-left : 25px solid transparent;
+  // border-right: 25px solid transparent;
+  // border-top  : 25px solid $color-leather;
+  top          : -35px;
+  left         : 50%;
+  z-index      : 5;
+  transform    : translate(-50%,0%);
 }
 .footer__logo {
   align-items    : center;
