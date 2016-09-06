@@ -9,7 +9,7 @@
         <a ng-href="http://www.goodbedford.com/#/site/resume#skills" class="resume__link">Skills</a>
         <a ng-href="http://www.goodbedford.com/#/site/resume#work" class="resume__link">Work Experience</a>
         <a ng-href="http://www.goodbedford.com/#/site/resume#portfolio" class="resume__link">Portfolio</a>
-        <a ng-href="http://www.goodbedford.com/#/site/resume#schools" class="resume__link">School</a>
+        <a ng-href="http://www.goodbedford.com/#/site/resume#education" class="resume__link">School</a>
       </div>
       <div class="resume__title resume__title--middle">{{resume.bio.name}}</div>
       <div class="resume__tag-line">"{{resume.bio.tagLine}}"</div>
@@ -70,7 +70,7 @@
             </div>
           </div>
         </div>
-        <div class="resume__title resume__title--header">Portfolio</div>
+        <div id="portfolio" class="resume__title resume__title--header">Portfolio</div>
         <div class="resume__portfolio " ng-repeat="project in resume.bio.projects">
           <div ng-class="resume.placeCssHeader($index, resume.bio.projects,'resume__divider')">
             <div class="resume__section">
@@ -103,7 +103,7 @@
             </div>
           </div>
         </div>
-        <div class="resume__title resume__title--header">Education</div>
+        <div id="education" class="resume__title resume__title--header">Education</div>
 
         <div class="resume__education" ng-repeat="ed in resume.bio.education track by $index">
           <div ng-class="resume.placeCssHeader($index, resume.bio.education,'resume__divider')">
