@@ -93,9 +93,9 @@
   border-top      : 1px solid $color-leather;
   left            : 0;
   margin          : 6.5rem 0 0;
-  position        : relative;
+  position        : fixed;
   right           : 0;
-  top             : 3px;
+  top             : 1px;
   z-index         : 9999;
 }
 .menu__section {

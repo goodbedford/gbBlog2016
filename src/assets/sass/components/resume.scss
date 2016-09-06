@@ -48,7 +48,7 @@ $flex-xl: 10 10;
   font-size  : $font-size-sm;
   font-weight: bold;
   margin     : 1rem 0 0;
-  min-width  : 30%;
+  min-width  : 35%;
   padding    : 0 1rem;
 }
 .resume__link,
@@ -89,7 +89,7 @@ $flex-xl: 10 10;
   justify-content : space-around;
   margin          : 10px auto;
   text-align      : center;
-  width           : 80%;
+  width           : 100%;
 }
 .resume__section--flex-column {
   align-items    : baseline;
@@ -124,6 +124,9 @@ $flex-xl: 10 10;
   .resume {
     width: 80%;
   }
+  .resume__section--spread {
+    width: 90%;
+  }
   // .resume__link,
   // .resume__link:visited {
   //   font-size: $font-size-md;
@@ -152,6 +155,9 @@ $flex-xl: 10 10;
   }
   .resume__link:hover {
     font-size: $font-size-md-plus;
+  }
+  .resume__section--spread {
+    width: 80%;
   }
   .resume__tag-line {
     font-size: $font-size-md-plus;

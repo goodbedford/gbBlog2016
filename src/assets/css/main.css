@@ -1338,9 +1338,9 @@ p {
   border-top: 1px solid #967d5a;
   left: 0;
   margin: 6.5rem 0 0;
-  position: relative;
+  position: fixed;
   right: 0;
-  top: 3px;
+  top: 1px;
   z-index: 9999; }
 
 .menu__section {
@@ -1808,7 +1808,7 @@ p {
   font-size: 1.2rem;
   font-weight: bold;
   margin: 1rem 0 0;
-  min-width: 30%;
+  min-width: 35%;
   padding: 0 1rem; }
 
 .resume__link,
@@ -1859,7 +1859,7 @@ p {
   justify-content: space-around;
   margin: 10px auto;
   text-align: center;
-  width: 80%; }
+  width: 100%; }
 
 .resume__section--flex-column {
   align-items: baseline;
@@ -1892,7 +1892,9 @@ p {
 
 @media screen and (min-width: 480px) {
   .resume {
-    width: 80%; } }
+    width: 80%; }
+  .resume__section--spread {
+    width: 90%; } }
 
 @media screen and (min-width: 768px) {
   .resume__label {
@@ -1903,6 +1905,8 @@ p {
     font-size: 2rem; }
   .resume__link:hover {
     font-size: 2rem; }
+  .resume__section--spread {
+    width: 80%; }
   .resume__tag-line {
     font-size: 2rem; }
   .resume__text {
