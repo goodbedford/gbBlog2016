@@ -85,8 +85,12 @@
 }
 .menu__link__icon {
   @include link-default;
+  @include transition-color-default;
   font-size: $font-size-md;
   // display  : none;
+}
+.menu__link__icon:hover {
+  @include link-default-hover;
 }
 .menu__list {
   background-color: $color-black;

@@ -1331,7 +1331,12 @@ p {
   text-transform: capitalize;
   text-decoration: none;
   word-break: break-all;
+  transition: 0.2s color;
   font-size: 1.6rem; }
+
+.menu__link__icon:hover {
+  color: white;
+  text-decoration: none; }
 
 .menu__list {
   background-color: #0a0a0a;
