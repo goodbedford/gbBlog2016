@@ -10,7 +10,10 @@
     function ResumeController(BioService) {
         var resume = this;
 
-        resume.bio = BioService;
+        BioService.getBio()
+        .then(function(bio) {
+          resume.bio = bio;
+        });
 
         resume.placeCssHeader = function(index, arr, cssProp) {
             if(index === arr.length -1) {

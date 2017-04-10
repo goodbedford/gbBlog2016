@@ -7,12 +7,12 @@
     <div class="projects">
       <!-- projectSpec -->
       <div class="project" ng-repeat="project in project.bio.projects track by $index">
-        <a ui-sref="site.details({projectId: $index})" class="project__link">
+        <a ui-sref="site.details({projectId: project.id})" class="project__link">
           <figure class="project__img-container">
             <img ng-src={{project.img[0]}} alt="{{project.title}} +logo image" class="project__img-container__img">
           </figure>
           <div class="project__title">{{project.title}}
-            <span class="project__text">{{project.date}}</span>
+            <span class="project__text">{{project.date}}-{{project.id}}</span>
           </div>
         </a>
       </div>

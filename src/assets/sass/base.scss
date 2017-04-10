@@ -1,27 +1,36 @@
 //
 // base
 //
-@import 'colors';
-@import 'fonts';
+@import "colors";
+@import "fonts";
+
 * {
   box-sizing: border-box;
-  margin    : 0;
-  padding   : 0;
+  margin: 0;
+  padding: 0;
 }
+
 html {
   font-size: 62.5%;
 }
+
 body {
-  color      : $color-black;
-  font-size  : $font-size-md;
+  color: $color-black;
+  font-size: $font-size-md;
   font-family: 'Tienne', serif;
-  margin     : 0;
-  min-width  : 300px;
-  padding    : 0;
+  margin: 0;
+  min-width: 300px;
+  padding: 0;
 }
+
 p {
   font-family: 'Open Sans', sans-serif;
 }
+
+a {
+  cursor: pointer;
+}
+
 //test class
 .red {
   border: 1px solid red;

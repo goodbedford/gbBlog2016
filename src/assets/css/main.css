@@ -46,6 +46,9 @@ body {
 p {
   font-family: 'Open Sans', sans-serif; }
 
+a {
+  cursor: pointer; }
+
 .red {
   border: 1px solid red; }
 
@@ -431,6 +434,9 @@ body {
 
 p {
   font-family: 'Open Sans', sans-serif; }
+
+a {
+  cursor: pointer; }
 
 .red {
   border: 1px solid red; }

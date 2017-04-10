@@ -6,7 +6,7 @@
   <div class="main-content">
     <div ng-repeat="blog in blog.blogs">
       <div class="row blogs">
-        <a class="blog blog--link" ui-sref="site.blogDetails({blogId: $index})">
+        <a class="blog blog--link" ui-sref="site.blogDetails({blogId: blog.id})">
           <figure class="blog__section blog__section--left">
             <div class="blog__img-container">
               <img class="blog__img-container__img" ng-src="{{blog.img}}" alt="{{blog.title}} logo">

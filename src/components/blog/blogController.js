@@ -10,8 +10,11 @@
     function BlogController(BlogService) {
         var blog = this;
 
-        blog.blogs = BlogService.query();
-
+        // blog.blogs = BlogService.query();
+        BlogService.getBlogs()
+        .then(function(blogs) {
+          blog.blogs = blogs;
+        });
         blog.placeCssHeader = function(index, arr, cssProp) {
             if(index === arr.length -1) {
                 return "";

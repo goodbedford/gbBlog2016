@@ -10,7 +10,12 @@
     function ProjectController(BioService) {
         var project = this;
 
-        project.bio = BioService;
+
+        BioService.getBio()
+        .then(function(bio) {
+          project.bio = bio;
+        });
+
 
 
     }

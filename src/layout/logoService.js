@@ -39,6 +39,11 @@
                         type: "Framework"
                     },
                     {
+                        name: "Babel",
+                        img: "src/assets/images/icons/babel.png",
+                        type: "Technology"
+                    },
+                    {
                         name: "Bootstrap",
                         img: "src/assets/images/icons/bootstap.jpeg",
                         type: "Framework"
@@ -64,6 +69,11 @@
                         type: "Technology"
                     },
                     {
+                        name: "Enzyme",
+                        img: "src/assets/images/icons/enzyme.png",
+                        type: "Library"
+                    },
+                    {
                         name: "Express",
                         img: "src/assets/images/icons/express.png",
                         type: "Framework"
@@ -86,6 +96,11 @@
                     {
                         name: "Jasmine",
                         img: "src/assets/images/icons/jasmine.png",
+                        type: "Library"
+                    },
+                    {
+                        name: "Jest",
+                        img: "src/assets/images/icons/jest.png",
                         type: "Library"
                     },
                     {
@@ -116,6 +131,16 @@
                     {
                         name: "Mongoose",
                         img: "src/assets/images/icons/mongoose.png",
+                        type: "Library"
+                    },
+                    {
+                        name: "React",
+                        img: "src/assets/images/icons/reactjs.png",
+                        type: "Library"
+                    },
+                    {
+                        name: "React-Router",
+                        img: "src/assets/images/icons/react-router.png",
                         type: "Library"
                     },
                     {
@@ -166,6 +191,16 @@
                     {
                         name: "Trello",
                         img: "src/assets/images/icons/trello.png",
+                        type: "Technology"
+                    },
+                    {
+                        name: "Webpack",
+                        img: "src/assets/images/icons/webpack.svg",
+                        type: "Technology"
+                    },
+                    {
+                        name: "Yarn",
+                        img: "src/assets/images/icons/yarn.png",
                         type: "Technology"
                     }
             ];

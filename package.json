@@ -31,7 +31,8 @@
     "karma-jasmine": "^0.3.7",
     "karma-jasmine-matchers": "^2.0.1",
     "karma-ng-html2js-preprocessor": "^0.2.0",
-    "load-grunt-tasks": "^3.4.0"
+    "load-grunt-tasks": "^3.4.0",
+    "node-sass": "^4.5.2"
   },
   "dependencies": {
     "angular": "^1.5.0",

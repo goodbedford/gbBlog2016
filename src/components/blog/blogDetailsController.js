@@ -14,8 +14,14 @@
 
     function activate() {
       var blogId = $stateParams.blogId;
-
-      blogDetails.blog = BlogService.getDetails(blogId);
+      BlogService.getDetails(blogId)
+      .then(function(blog) {
+        console.log("xxx", blog);
+        blogDetails.blog = blog;
+      })
+      .catch(function(error) {
+        console.error("Error with get blog id", error);
+      });
       console.log("blog details controllerrrr");
     }
   }
